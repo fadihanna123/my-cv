@@ -1,8 +1,6 @@
-import React from "react";
 import "./styles/App.css";
+import { Layout } from "./app/";
 
-const App: React.FC = () => {
-  return <div className="row">Content</div>;
-};
+const App: React.FC = () => <Layout />;
 
 export default App;
