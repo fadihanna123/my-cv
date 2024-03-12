@@ -18,8 +18,11 @@ const Layout: React.FC = () => {
             />
             <br />
             <div className="firstColTxt">
-              <h1>Fadi Hanna</h1>
+              <h1 className="myName heading">Fadi Hanna</h1>
               <h4> Frontend developer </h4>
+              <br />
+              Skills:
+              <section className="skillSec"> HTML CSS JAVASCRIPT </section>
             </div>
           </div>
         </div>
@@ -27,7 +30,7 @@ const Layout: React.FC = () => {
           <div className="secondContainerCol">
             <div className="expeeduRow">
               <div className="expeCol">
-                <h1>Experience</h1>
+                <h1 className="heading">Experience</h1>
 
                 {expeData.map((expe) => {
                   return (
@@ -43,7 +46,7 @@ const Layout: React.FC = () => {
                 })}
               </div>
               <div className="eduCol">
-                <h1>Education</h1>
+                <h1 className="heading">Education</h1>
 
                 {eduData.map((expe) => {
                   return (

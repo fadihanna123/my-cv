@@ -13,12 +13,19 @@
   border: 0;
 }
 
+.heading {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
 .myProfilePic {
+  position: relative;
   width: 200px;
   height: 200px;
   border: 1px solid black;
   border-radius: 50%;
   margin-right: 10px;
+  animation: moveLeft 2s;
+  animation-fill-mode: forwards;
 }
 
 .firstContainerCol {
@@ -41,4 +48,30 @@
 
 .expeSection {
   margin-top: 20px;
+}
+
+.skillSec {
+}
+
+@keyframes glow {
+  from {
+    position: absolute;
+  }
+
+  to {
+    color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2,
+      0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2,
+      0 1 90px #00fff2;
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 30%;
+  }
 }
