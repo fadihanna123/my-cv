@@ -1,6 +1,6 @@
 const PersonCardSection: React.FC = () => {
   const IMAGES = {
-    myProfilePic: new URL('../assets/myProfilePic.jpg', import.meta.url).href,
+    myProfilePic: new URL('../assets/myProfilePic.JPG', import.meta.url).href,
   };
 
   return (
