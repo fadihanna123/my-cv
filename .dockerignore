@@ -1,5 +1,6 @@
 # Git
 .git
+.gitignore
 
 # Dependancies
 node_modules
@@ -10,3 +11,12 @@ dist
 
 # Readme
 README.md
+
+# Docker
+Dockerfile
+
+# License
+LICENSE
+
+# Vscode
+.vscode
