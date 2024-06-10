@@ -1,10 +1,10 @@
-import { eduData } from '../consts';
-import TxtSection from './TxtSection';
+import { eduData } from "../consts";
+import TxtSection from "./TxtSection";
 
 const EducationSection: React.FC = () => {
   return (
-    <div className='eduCol'>
-      <h1 className='heading'>Education</h1>
+    <div className="eduCol">
+      <h1 className="heading">Education</h1>
 
       {eduData.map((expe) => {
         return (
