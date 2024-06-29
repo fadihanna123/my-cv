@@ -21,3 +21,6 @@ LICENSE
 
 # Vscode
 .vscode
+
+# Config
+.editorconfig
