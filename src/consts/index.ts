@@ -1,4 +1,4 @@
-const expeData = [
+const expeData: expeEduData[] = [
   {
     id: 1,
     title: "IT consultant – Founder",
@@ -57,7 +57,7 @@ const expeData = [
   },
 ];
 
-const eduData = [
+const eduData: expeEduData[] = [
   {
     id: 1,
     title: "High Education Diploma with specialization in Computer Engineering",
