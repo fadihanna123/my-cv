@@ -1,6 +1,14 @@
 const expeData: expeEduData[] = [
   {
     id: 1,
+    title: "Fullstack developer – Internship",
+    fromDate: "2024",
+    toDate: "2024",
+    company: "Luday",
+    location: "Remote",
+  },
+  {
+    id: 2,
     title: "IT consultant – Founder",
     fromDate: "2023",
     toDate: "2023",
@@ -8,7 +16,7 @@ const expeData: expeEduData[] = [
     location: "Södertälje, Sweden",
   },
   {
-    id: 2,
+    id: 3,
     title: "Dataadmin - Consultant",
     fromDate: "2022",
     toDate: "2022",
@@ -16,7 +24,7 @@ const expeData: expeEduData[] = [
     location: "Remote",
   },
   {
-    id: 3,
+    id: 4,
     title: "System Developer",
     fromDate: "2022",
     toDate: "2022",
@@ -24,7 +32,7 @@ const expeData: expeEduData[] = [
     location: "Solna, Sweden",
   },
   {
-    id: 4,
+    id: 5,
     title: "Javascript Developer",
     fromDate: "2021",
     toDate: "2021",
@@ -32,7 +40,7 @@ const expeData: expeEduData[] = [
     location: "Tumba and Älvsjö, Sweden",
   },
   {
-    id: 5,
+    id: 6,
     title: "Web Developer - Consultant",
     fromDate: "2020",
     toDate: "2020",
@@ -40,7 +48,7 @@ const expeData: expeEduData[] = [
     location: "Södertälje, Sweden",
   },
   {
-    id: 6,
+    id: 7,
     title: "Web Developer - Internship",
     fromDate: "2020",
     toDate: "2020",
@@ -48,7 +56,7 @@ const expeData: expeEduData[] = [
     location: "Södertälje, Sweden",
   },
   {
-    id: 7,
+    id: 8,
     title: "Web Development Teacher",
     fromDate: "2020",
     toDate: "2020",
