@@ -10,5 +10,9 @@ export default defineConfig({
       usePolling: true,
     },
   },
+  base: "",
+  build: {
+    outDir: "dist",
+  },
   plugins: [react()],
 });
