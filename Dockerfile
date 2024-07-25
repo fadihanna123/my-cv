@@ -1,8 +1,8 @@
-FROM node:20.15.1-alpine3.20
+FROM node:20.16.0-alpine3.20
 WORKDIR /app
 COPY yarn.lock package.json ./
 RUN npm i --silent --ignore-scripts -g rimraf
 RUN yarn --silent --ignore-scripts
 COPY . .
 EXPOSE 3000
-CMD yarn dev
+CMD ["yarn", "dev"]
