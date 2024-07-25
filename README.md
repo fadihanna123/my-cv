@@ -2,7 +2,7 @@
 
 > My CV is my portfolio website to show my experiences, projects and education.
 
-# [Website](https://fadihanna123.github.io/my-cv/)
+[<div align="center">Website</div>](https://fadihanna123.github.io/my-cv/)
 
 
 ## 🚀 Quick Start
