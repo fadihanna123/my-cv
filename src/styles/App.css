@@ -1,47 +1,9 @@
-.containerRow {
-  display: flex;
-}
-
-.containerCol {
-  width: 50%;
-  border-right: 2px solid #000;
-  height: 100vh;
-  padding: 10px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .containerCol:last-child {
   border: 0;
-}
-
-.myProfilePic {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.firstContainerCol {
-  position: relative;
-  top: 30%;
-  text-align: center;
-}
-
-.expeeduRow {
-  display: flex;
-}
-
-.expeCol {
-  width: 50%;
-}
-
-.eduCol {
-  width: 50%;
-}
-
-.expeSection {
-  margin-top: 20px;
 }
 
 @keyframes glow {
@@ -70,5 +32,11 @@
 
   to {
     left: 30%;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 100%;
   }
 }

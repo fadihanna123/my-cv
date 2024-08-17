@@ -4,15 +4,15 @@ const PersonCardSection: React.FC = () => {
   };
 
   return (
-    <div className="firstContainerCol">
+    <div className="relative top-[30%] text-center">
       <img
-        className="myProfilePic"
+        className="relative w-[200px] h-[200px] border-solid border-[#000] rounded-full max-w-[100%] ml-auto mr-auto"
         src={IMAGES.myProfilePic}
         alt="myProfilePic"
       />
       <br />
-      <div className="firstColTxt">
-        <h1 className="myName heading">Fadi Hanna</h1>
+      <div>
+        <h1 className="text-xl">Fadi Hanna</h1>
         <h4> Frontend developer </h4>
         <br />
         Skills:
