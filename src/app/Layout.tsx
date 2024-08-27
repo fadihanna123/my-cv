@@ -2,6 +2,7 @@ import {
   ExperienceSection,
   EducationSection,
   PersonCardSection,
+  ProjectsSection,
 } from "../components";
 
 const Layout: React.FC = () => (
@@ -11,11 +12,12 @@ const Layout: React.FC = () => (
         <PersonCardSection />
       </div>
       <div className="w-[50%] border-[#000] border-solid border-r-2 h-[100vh] p-2">
-        <div>
-          <div className="flex">
-            <ExperienceSection />
-            <EducationSection />
-          </div>
+        <div className="flex">
+          <ExperienceSection />
+          <EducationSection />
+        </div>
+        <div className="">
+          <ProjectsSection />
         </div>
       </div>
     </div>

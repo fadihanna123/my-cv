@@ -1,4 +1,4 @@
-import { eduData } from "../consts";
+import { eduData } from "../data";
 import TxtSection from "./TxtSection";
 
 const EducationSection: React.FC = () => {

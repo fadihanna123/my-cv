@@ -15,6 +15,14 @@ declare global {
     company: string;
     location: string;
   }
+
+  interface projectData {
+    id: number;
+    title: string;
+    URL: string;
+    GitURL: string;
+    assetPath: string;
+  }
 }
 
 export {};
