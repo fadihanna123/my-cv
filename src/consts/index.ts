@@ -147,4 +147,19 @@ const projectData: projectData[] = [
   },
 ];
 
-export { expeData, eduData, projectData, IMAGES };
+const skills = [
+  {
+    id: 1,
+    value: "HTML",
+  },
+  {
+    id: 2,
+    value: "CSS",
+  },
+  {
+    id: 3,
+    value: "Javascript",
+  },
+];
+
+export { expeData, eduData, projectData, IMAGES, skills };

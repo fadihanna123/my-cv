@@ -7,16 +7,19 @@ const ProjectsSection = () => {
       <div className="rounded overflow-hidden shadow-lg flex flex-row flex-wrap">
         {projectData.map((project) => {
           return (
-            <div className="w-[50%] p-2 border mt-2 rounded">
+            <div
+              className="w-[50%] p-2 border mt-2 rounded text-center"
+              key={project.id}
+            >
               <img
                 className="w-full"
                 src={project.assetPath}
                 alt={project.assetPath}
               />
-              <div className="py-4">
+              <div className="py-4 text-black p-2">
                 <div className="font-bold text-xl mb-2"> {project.title} </div>
               </div>
-              <div className="w-[100]">
+              <div className="w-[100%] bg-white text-black">
                 <a href={project.GitURL} className="m-2" target="_blank">
                   <i className="fa-brands fa-github text-2xl"></i>
                 </a>

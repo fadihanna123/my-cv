@@ -3,8 +3,8 @@ import TxtSection from "./TxtSection";
 
 const EducationSection: React.FC = () => {
   return (
-    <div className="w-[50%]">
-      <h1 className="text-xl">Education</h1>
+    <div className="w-[50%] text-xl">
+      <h1 className="text-2xl">Education</h1>
 
       {eduData.map((expe) => {
         return (

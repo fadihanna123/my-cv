@@ -1,4 +1,5 @@
 yarn --emoji --ignore-scripts
+vitest run
 yarn lint
 yarn format
 rm -rf node_modules
