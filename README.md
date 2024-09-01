@@ -28,6 +28,11 @@ yarn dev
 # Go to http://localhost:3000
 ```
 
+```sh
+# Testing
+yarn test
+```
+
 ## 🤝 Contributing
 
 1 - Clone the project. <br />
