@@ -1,4 +1,4 @@
-import { expeData } from "../data";
+import { expeData } from "../consts";
 import TxtSection from "./TxtSection";
 
 const ExperienceSection: React.FC = () => {

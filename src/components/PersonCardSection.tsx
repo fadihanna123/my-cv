@@ -1,8 +1,6 @@
-const PersonCardSection: React.FC = () => {
-  const IMAGES = {
-    myProfilePic: new URL("../assets/myProfilePic.JPG", import.meta.url).href,
-  };
+import { IMAGES } from "../consts";
 
+const PersonCardSection: React.FC = () => {
   return (
     <div className="relative top-[30%] text-center">
       <img

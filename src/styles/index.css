@@ -8,6 +8,13 @@ img {
 }
 
 .container {
-  background: conic-gradient(red 45deg, green 210deg);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: conic-gradient(
+    red 0deg,
+    red 90deg,
+    yellow 90deg,
+    green 180deg,
+    green 270deg,
+    blue 270deg
+  );
+  text-shadow: #fc0 1px 0 10px;
 }
