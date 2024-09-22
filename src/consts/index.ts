@@ -99,6 +99,7 @@ const projectData: projectData[] = [
   {
     id: 1,
     title: "PixabayFinder",
+    desc: "🖼️ An app to fetch images and videos from Pixabay.",
     URL: "https://pixabayfinderx.netlify.app/",
     GitURL: "https://github.com/fadihanna123/PixabayFinder/",
     assetPath: IMAGES.Pixabayfinder,
@@ -106,6 +107,7 @@ const projectData: projectData[] = [
   {
     id: 2,
     title: "Intranat",
+    desc: "🧑‍💼A dashboard application that helps staff communicate with their managers.",
     URL: "https://intranet.gssonsel.se.185-133-206-116.bb.kringelstan.se/",
     GitURL: "https://github.com/fadihanna123/Intranat/",
     assetPath: IMAGES.Intranat,
@@ -113,6 +115,7 @@ const projectData: projectData[] = [
   {
     id: 3,
     title: "Datahjälp",
+    desc: "💻 Datahjälp is a company that informs customers about the company's prices and contact details for these companies. Datahjälp helps customers fix their computers.",
     URL: "https://fadihanna123.github.io/DatahjalpProjekt/",
     GitURL: "https://github.com/fadihanna123/DatahjalpProjekt/",
     assetPath: IMAGES.Datahjalp,
@@ -120,6 +123,7 @@ const projectData: projectData[] = [
   {
     id: 4,
     title: "Old My CV",
+    desc: "🏢 A website to show my CV in webapplication.",
     URL: "",
     GitURL: "https://github.com/fadihanna123/CV_React/",
     assetPath: IMAGES.CV_React,
@@ -127,6 +131,7 @@ const projectData: projectData[] = [
   {
     id: 5,
     title: "Din Restaurang",
+    desc: "🍔 A restaurantapplication and adminpanel as shows and manages 5 food types.",
     URL: "",
     GitURL: "https://github.com/fadihanna123/Din_Restaurang/",
     assetPath: IMAGES.Dinrestaurang,
@@ -134,6 +139,7 @@ const projectData: projectData[] = [
   {
     id: 6,
     title: "Chat Me",
+    desc: "💬 A chatapplication to chat other people in the public chat. All messages will be shown in the chatroom.",
     URL: "",
     GitURL: "https://github.com/fadihanna123/chatMe/",
     assetPath: IMAGES.ChatMe,
@@ -141,6 +147,7 @@ const projectData: projectData[] = [
   {
     id: 7,
     title: "Camera Website",
+    desc: "",
     URL: "",
     GitURL: "https://github.com/fadihanna123/CameraWebsite/",
     assetPath: IMAGES.CameraWebsite,
@@ -150,15 +157,63 @@ const projectData: projectData[] = [
 const skills = [
   {
     id: 1,
-    value: "HTML",
+    value: "ReactJS",
+    icon: "react",
   },
   {
     id: 2,
-    value: "CSS",
+    value: "Angular",
+    icon: "angular",
   },
   {
     id: 3,
     value: "Javascript",
+    icon: "js",
+  },
+  {
+    id: 4,
+    value: "PHP",
+    icon: "php",
+  },
+  {
+    id: 5,
+    value: "Wordpress",
+    icon: "wordpress",
+  },
+  {
+    id: 6,
+    value: "NodeJS",
+    icon: "node",
+  },
+  {
+    id: 7,
+    value: "NPM",
+    icon: "npm",
+  },
+  {
+    id: 8,
+    value: "HTML 5",
+    icon: "html5",
+  },
+  {
+    id: 9,
+    value: "CSS",
+    icon: "css3",
+  },
+  {
+    id: 10,
+    value: "Bootstrap",
+    icon: "bootstrap",
+  },
+  {
+    id: 11,
+    value: "Git",
+    icon: "git",
+  },
+  {
+    id: 12,
+    value: "Gulp",
+    icon: "gulp",
   },
 ];
 

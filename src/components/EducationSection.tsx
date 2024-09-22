@@ -3,7 +3,7 @@ import TxtSection from "./TxtSection";
 
 const EducationSection: React.FC = () => {
   return (
-    <div className="w-[50%] text-xl">
+    <div className="w-[50%] text-xl italic" id="education">
       <h1 className="text-2xl">Education</h1>
 
       {eduData.map((expe) => {

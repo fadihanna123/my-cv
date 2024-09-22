@@ -3,7 +3,7 @@ import { projectData } from "../consts";
 const ProjectsSection = () => {
   return (
     <>
-      <h1 className="text-2xl text-center m-2 shadow-md">Projects</h1>
+      <h1 className="text-2xl text-center m-2 shadow-md italic">Projects</h1>
       <div className="rounded overflow-hidden shadow-lg flex flex-row flex-wrap">
         {projectData.map((project) => {
           return (
@@ -17,7 +17,10 @@ const ProjectsSection = () => {
                 alt={project.assetPath}
               />
               <div className="py-4 text-black p-2">
-                <div className="font-bold text-xl mb-2"> {project.title} </div>
+                <div className="font-bold text-xl mb-2 text-[#fff]">
+                  {project.title}
+                  <p className="text-center text-[18px]">{project.desc}</p>
+                </div>
               </div>
               <div className="w-[100%] bg-white text-black">
                 <a href={project.GitURL} className="m-2" target="_blank">

@@ -19,6 +19,7 @@ declare global {
   interface projectData {
     id: number;
     title: string;
+    desc: string;
     URL: string;
     GitURL: string;
     assetPath: string;

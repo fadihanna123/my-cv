@@ -4,22 +4,28 @@ import {
   PersonCardSection,
   ProjectsSection,
 } from "../components";
+import Footer from "../inc/Footer";
+import Header from "../inc/Header";
 
 const Layout: React.FC = () => (
-  <div className="container text-lg m-0 p-0 border-0 outline-0 text-[#fff] font-bold">
-    <div className="flex">
-      <div className="w-[50%] border-[#000] border-solid border-r-2 h-[100vh] p-2">
+  <div className="container text-lg m-0 p-0 border-0 outline-0 text-[#000] font-bold">
+    <Header />
+    <br />
+    <br />
+    <div className="">
+      <div className="border-[#000] border-solid border-r-2 p-2">
         <PersonCardSection />
       </div>
-      <div className="w-[50%] border-[#000] border-solid border-r-2 p-2">
-        <div className="flex">
+      <div className="border-[#000] border-solid border-r-2 p-2 ml-20">
+        <div className="flex" id="experience">
           <ExperienceSection />
           <EducationSection />
         </div>
-        <div className="">
+        <div id="projects">
           <ProjectsSection />
         </div>
       </div>
+      <Footer />
     </div>
   </div>
 );

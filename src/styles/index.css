@@ -8,11 +8,5 @@ img {
 }
 
 .container {
-  background-image: conic-gradient(
-    #ff474c 0deg,
-    red 90deg,
-    yellow 90deg,
-    green 180deg,
-    blue 270deg
-  );
+  background-image: linear-gradient(yellow, red, blue);
 }
