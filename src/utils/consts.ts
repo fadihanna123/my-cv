@@ -9,6 +9,16 @@ const IMAGES = {
   Intranat: new URL("../assets/Intranat.png", import.meta.url).href,
 };
 
+const carouselImageCollection = [
+  IMAGES.CV_React,
+  IMAGES.CameraWebsite,
+  IMAGES.ChatMe,
+  IMAGES.Datahjalp,
+  IMAGES.Dinrestaurang,
+  IMAGES.Intranat,
+  IMAGES.Pixabayfinder,
+];
+
 const expeData: expeEduData[] = [
   {
     id: 1,
@@ -217,4 +227,11 @@ const skills = [
   },
 ];
 
-export { expeData, eduData, projectData, IMAGES, skills };
+export {
+  expeData,
+  eduData,
+  projectData,
+  IMAGES,
+  skills,
+  carouselImageCollection,
+};

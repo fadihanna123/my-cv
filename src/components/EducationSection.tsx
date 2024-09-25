@@ -1,5 +1,5 @@
-import { eduData } from "../consts";
-import TxtSection from "./TxtSection";
+import { eduData } from "../utils/consts";
+import TxtSection from "../ui/TxtSection";
 
 const EducationSection: React.FC = () => {
   return (

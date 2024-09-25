@@ -1,4 +1,4 @@
-import { IMAGES, skills } from "../consts";
+import { IMAGES, skills } from "../utils/consts";
 
 const PersonCardSection: React.FC = () => {
   return (

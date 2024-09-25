@@ -84,3 +84,16 @@
   animation: textGlow 1.5s;
   animation-iteration-count: 2;
 }
+
+.carouselContainer {
+  margin: 0 auto;
+  aspect-ratio: 10 / 6;
+}
+
+.carouselBtn {
+  transition: background-color 100ms ease-in-out;
+}
+
+.carouselBtn:hover {
+  background-color: rgba(0, 0, 0, 20%);
+}
