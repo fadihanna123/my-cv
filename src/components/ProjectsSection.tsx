@@ -1,8 +1,10 @@
-import { projectData } from "../consts";
+import Carousel from "../ui/Carousel";
+import { carouselImageCollection, projectData } from "../utils/consts";
 
 const ProjectsSection = () => {
   return (
     <>
+      <Carousel images={carouselImageCollection} />
       <h1 className="text-2xl text-center m-2 shadow-md italic">Projects</h1>
       <div className="rounded overflow-hidden shadow-lg flex flex-row flex-wrap">
         {projectData.map((project) => {
@@ -12,7 +14,7 @@ const ProjectsSection = () => {
               key={project.id}
             >
               <img
-                className="w-full"
+                className="w-full h-[500px]"
                 src={project.assetPath}
                 alt={project.assetPath}
               />

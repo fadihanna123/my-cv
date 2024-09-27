@@ -17,7 +17,7 @@ const Layout: React.FC = () => (
         <PersonCardSection />
       </div>
       <div className="border-[#000] border-solid border-r-2 p-2 ml-20">
-        <div className="flex" id="experience">
+        <div className="" id="experience">
           <ExperienceSection />
           <EducationSection />
         </div>
