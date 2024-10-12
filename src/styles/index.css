@@ -10,5 +10,6 @@ img {
 }
 
 .container {
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-image: linear-gradient(yellow, red, blue);
 }

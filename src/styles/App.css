@@ -97,3 +97,22 @@
 .carouselBtn:hover {
   background-color: rgba(0, 0, 0, 20%);
 }
+
+@keyframes animateFromUp {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.personCardSection {
+  background-image: linear-gradient(43deg, #4158d0 50%, #fff 10%);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 50%);
+}
+
+.animateIt {
+  animation: animateFromUp 2s alternate;
+}

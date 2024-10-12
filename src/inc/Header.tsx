@@ -11,12 +11,12 @@ const Header: React.FC = () => {
         </li>
         <li className="inline m-4 p-4">
           <a href="#education" className="hover:text-white">
-            Education
+            <i className="fa-solid fa-book"></i> Education
           </a>
         </li>
         <li className="inline m-4 p-4">
           <a href="#experience" className="hover:text-white">
-            Experience
+            🧑‍💻 Experience
           </a>
         </li>
         <li className="inline m-4 p-4">

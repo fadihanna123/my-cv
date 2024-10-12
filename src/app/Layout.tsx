@@ -3,6 +3,7 @@ import {
   EducationSection,
   PersonCardSection,
   ProjectsSection,
+  SkillsSection,
 } from "../components";
 import Footer from "../inc/Footer";
 import Header from "../inc/Header";
@@ -12,9 +13,12 @@ const Layout: React.FC = () => (
     <Header />
     <br />
     <br />
-    <div className="">
+    <div>
       <div className="border-[#000] border-solid border-r-2 p-2">
         <PersonCardSection />
+      </div>
+      <div>
+        <SkillsSection />
       </div>
       <div className="border-[#000] border-solid border-r-2 p-2 ml-20">
         <div className="" id="experience">
