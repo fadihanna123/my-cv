@@ -17,7 +17,7 @@ const compat = new FlatCompat({
 
 export default [
   {
-    ignores: ["dist/**", "**/.eslintrc.cjs", "api"],
+    ignores: ["dist/**", "**/.eslintrc.cjs"],
   },
   ...fixupConfigRules(
     compat.extends(
