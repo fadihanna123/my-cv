@@ -9,7 +9,7 @@ import Footer from "../inc/Footer";
 import Header from "../inc/Header";
 
 const Layout: React.FC = () => (
-  <div className="container text-lg m-0 p-0 border-0 outline-0 text-[#000] font-bold">
+  <div className="container bg-white dark:bg-black dark:text-[#fff] text-lg m-0 p-0 border-0 outline-0 text-[#000] font-bold">
     <Header />
     <br />
     <br />

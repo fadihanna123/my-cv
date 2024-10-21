@@ -19,7 +19,7 @@ const ProjectsSection = () => {
                 alt={project.assetPath}
               />
               <div className="py-4 text-black p-2">
-                <div className="font-bold text-xl mb-2 text-[#fff]">
+                <div className="font-bold text-xl mb-2 text-[#000] dark:text-[#fff]">
                   {project.title}
                   <p className="text-center text-[18px]">{project.desc}</p>
                 </div>

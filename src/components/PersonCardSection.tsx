@@ -11,18 +11,20 @@ const PersonCardSection: React.FC = () => {
         />
       </div>
       <div className="mt-20">
-        <h1 className="text-6xl iterateCountOnce text-#000">Fadi Hanna</h1>
+        <h1 className="text-6xl iterateCountOnce text-#000 dark:text-[#000]">
+          Fadi Hanna
+        </h1>
         <h4 className="text-2xl iterateCountOnce text-center text-sky-600">
           {" "}
           Frontend developer{" "}
         </h4>
         <div className="text-center">
           <a href="https://www.linkedin.com/in/fadihanna123" target="_blank">
-            <i className="fa-brands fa-linkedin text-[40px] m-[20px]"></i>
+            <i className="fa-brands fa-linkedin text-[40px] m-[20px] dark:text-[#000]"></i>
           </a>
 
           <a href="https://github.com/fadihanna123" target="_blank">
-            <i className="fa-brands fa-github text-[40px]"></i>
+            <i className="fa-brands fa-github text-[40px] dark:text-[#000]"></i>
           </a>
         </div>
         <br />

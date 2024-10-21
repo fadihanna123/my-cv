@@ -1,5 +1,8 @@
 const Header: React.FC = () => {
-  const getDark = () => {};
+  const getDark = () => {
+    const element = document.documentElement;
+    element.classList.toggle("dark");
+  };
 
   return (
     <nav className="float-right">
