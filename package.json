@@ -12,7 +12,6 @@
     "build": "tsc && vite build",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0 && stylelint **/*.css",
     "preview": "vite preview",
-    "prepare": "husky",
     "deploy": "yarn && yarn build && gh-pages -d dist",
     "test": "vitest"
   },
