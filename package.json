@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "my-cv",
   "private": true,
@@ -55,3 +56,63 @@
   },
   "homepage": "https://fadihanna123.github.io/my-cv"
 }
+=======
+{
+  "name": "my-cv",
+  "private": true,
+  "version": "0.0.6",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "rimraf dist",
+    "format": "prettier . -w",
+    "setup": "yarn --silent --emoji --ignore-scripts --imutable",
+    "clear": "rimraf node_modules dist",
+    "build": "tsc && vite build",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0 && stylelint **/*.css",
+    "preview": "vite preview",
+    "prepare": "husky",
+    "deploy": "yarn && yarn build && gh-pages -d dist",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "react": "^18.3.1",
+    "react-chrono": "^2.6.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.0",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.12.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/node": "^22.6.1",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "9.10.0",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "gh-pages": "^6.2.0",
+    "globals": "^15.11.0",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1",
+    "tailwindcss": "^3.4.13",
+    "typescript": "4.7.4",
+    "typescript-eslint": "^8.8.1",
+    "vite": "^5.4.8",
+    "vite-tsconfig-paths": "^5.0.1",
+    "vitest": "^2.1.2"
+  },
+  "homepage": "https://fadihanna123.github.io/my-cv"
+}
+>>>>>>> 3c74bb3 (Add immutable to npm script, make education and experience more readable)

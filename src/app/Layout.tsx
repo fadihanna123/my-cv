@@ -21,7 +21,7 @@ const Layout: React.FC = () => (
         <SkillsSection />
       </div>
       <div className="border-[#000] border-solid border-r-2 p-2 ml-20">
-        <div className="" id="experience">
+        <div id="experience">
           <ExperienceSection />
           <EducationSection />
         </div>
