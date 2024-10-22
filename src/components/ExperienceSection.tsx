@@ -3,10 +3,10 @@ import TxtSection from "../ui/TxtSection";
 
 const ExperienceSection: React.FC = () => {
   return (
-    <div className="text-center text-xl">
+    <div className="sm:text-center text-left text-xl">
       <h1 className="text-3xl"> 🧑‍💻 Experience</h1>
 
-      <div className="flex flex-wrap flex-row mt-2">
+      <div className="flex flex-wrap mt-2 sm:flex-row flex-col">
         {expeData.map((expe: expeEduData) => {
           return (
             <TxtSection
