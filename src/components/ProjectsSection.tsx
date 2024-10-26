@@ -20,7 +20,7 @@ const ProjectsSection = () => {
               />
               <div className="py-4 p-2">
                 <div
-                  className={`font-bold text-xl mb-2 ${project.desc && "h-[120px]"}`}
+                  className={`font-bold text-xl mb-2 ${project.desc && "h-[170px]"}`}
                 >
                   <h1> {project.title} </h1>
                   <p className="text-center text-[18px]">{project.desc}</p>
