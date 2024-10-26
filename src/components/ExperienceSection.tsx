@@ -3,21 +3,23 @@ import TxtSection from "../ui/TxtSection";
 
 const ExperienceSection: React.FC = () => {
   return (
-    <div className="text-center text-xl" id="experience">
-      <h1 className="text-3xl"> 🧑‍💻 Experience</h1>
+    <div className="text-xl">
+      <h1 className="text-3xl text-center"> 🧑‍💻 Experience</h1>
 
-      {expeData.map((expe: expeEduData) => {
-        return (
-          <TxtSection
-            key={expe.id}
-            title={expe.title}
-            fromDate={expe.fromDate}
-            toDate={expe.toDate}
-            company={expe.company}
-            location={expe.location}
-          />
-        );
-      })}
+      <div className="flex sm:text-center text-left flex-wrap mt-2 sm:flex-row flex-col">
+        {expeData.map((expe: expeEduData) => {
+          return (
+            <TxtSection
+              key={expe.id}
+              title={expe.title}
+              fromDate={expe.fromDate}
+              toDate={expe.toDate}
+              company={expe.company}
+              location={expe.location}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

@@ -8,8 +8,3 @@ img {
   width: 100%;
   height: auto;
 }
-
-.container {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-image: linear-gradient(yellow, red, blue);
-}

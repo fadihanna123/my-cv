@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import viteTsconfigPaths from "vite-tsconfig-paths";
 
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
@@ -14,5 +15,5 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
-  plugins: [react()],
+  plugins: [react(), viteTsconfigPaths()],
 });

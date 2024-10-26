@@ -3,23 +3,25 @@ import TxtSection from "../ui/TxtSection";
 
 const EducationSection: React.FC = () => {
   return (
-    <div className="text-center text-xl" id="education">
-      <h1 className="text-2xl">
+    <div className="sm:text-center text-left text-xl mt-2" id="education">
+      <h1 className="text-3xl text-center">
         <i className="fa-solid fa-book"></i> Education
       </h1>
 
-      {eduData.map((expe: expeEduData) => {
-        return (
-          <TxtSection
-            key={expe.id}
-            title={expe.title}
-            fromDate={expe.fromDate}
-            toDate={expe.toDate}
-            company={expe.company}
-            location={expe.location}
-          />
-        );
-      })}
+      <div className="flex flex-wrap">
+        {eduData.map((expe: expeEduData) => {
+          return (
+            <TxtSection
+              key={expe.id}
+              title={expe.title}
+              fromDate={expe.fromDate}
+              toDate={expe.toDate}
+              company={expe.company}
+              location={expe.location}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

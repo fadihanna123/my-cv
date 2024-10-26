@@ -9,7 +9,7 @@ import Footer from "../inc/Footer";
 import Header from "../inc/Header";
 
 const Layout: React.FC = () => (
-  <div className="container text-lg m-0 p-0 border-0 outline-0 text-[#000] font-bold">
+  <div className="container bg-[#fff] text-lg m-0 p-0 border-0 outline-0 text-[#000] font-bold overflow-auto">
     <Header />
     <br />
     <br />
@@ -20,8 +20,8 @@ const Layout: React.FC = () => (
       <div>
         <SkillsSection />
       </div>
-      <div className="border-[#000] border-solid border-r-2 p-2 ml-20">
-        <div className="" id="experience">
+      <div className="border-[#000] border-solid border-r-2 p-2 sm:ml-20 ml-0">
+        <div id="experience">
           <ExperienceSection />
           <EducationSection />
         </div>
