@@ -14,7 +14,7 @@ const Header: React.FC = () => {
         </li>
         <li className="sm:inline block m-4 p-4">
           <a href="#projects" className="hover:text-white">
-            Projects
+            🌐 Projects
           </a>
         </li>
       </ul>

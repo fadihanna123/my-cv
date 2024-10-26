@@ -2,39 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.containerCol:last-child {
-  border: 0;
-}
-
-@keyframes glow {
-  from {
-    position: absolute;
-  }
-
-  to {
-    color: gray;
-    text-shadow:
-      0 0 20px #00fff2,
-      0 0 30px #00fff2,
-      0 0 40px #00fff2,
-      0 0 50px #00fff2,
-      0 0 60px #00fff2,
-      0 0 70px #00fff2,
-      0 0 80px #00fff2,
-      0 1 90px #00fff2;
-  }
-}
-
-@keyframes moveLeft {
-  from {
-    left: 0;
-  }
-
-  to {
-    left: 30%;
-  }
-}
-
 @media (width >= 640px) {
   .container {
     max-width: 100%;
@@ -110,9 +77,44 @@
 
 .personCardSection {
   background-image: linear-gradient(43deg, #4158d0 50%, #fff 10%);
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 50%);
+  box-shadow: 12px 12px 2px 1px rgba(24, 24, 24, 65.9%);
 }
 
 .animateIt {
   animation: animateFromLeft 1s alternate;
+}
+
+@media (width < 620px) {
+  .personCardSection {
+    box-shadow: none;
+    background-image: conic-gradient(#4158d0, #fff);
+  }
+}
+
+@media (width > 620px) and (width < 711px) {
+  .personCardSection {
+    background-image: linear-gradient(43deg, #4158d0 50%, #fff 10%);
+  }
+}
+
+.container {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    color: #fff;
+    background-color: #000;
+    box-shadow: 12px 12px 2px 100px rgba(250, 250, 250, 65.9%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .iconContainer {
+    background-color: #000;
+  }
+
+  .iconContainer > * {
+    color: #fff;
+  }
 }

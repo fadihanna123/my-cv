@@ -5,7 +5,7 @@ const TxtSection: React.FC<TxtSectionProps> = ({
   company,
   location,
 }: TxtSectionProps) => (
-  <div className="mt-[20px] sm:w-[50%] w-[100%]">
+  <div className="mt-[20px] sm:w-[50%] w-[100%] p-2">
     <p>
       <b>{title},</b> {fromDate === toDate ? "" : `${fromDate} - `} {toDate}
       <br />

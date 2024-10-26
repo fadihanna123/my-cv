@@ -8,26 +8,3 @@ img {
   width: 100%;
   height: auto;
 }
-
-.container {
-  font-family: Georgia, "Times New Roman", Times, serif;
-
-  /*  background-image: linear-gradient(yellow, red, blue); */
-}
-
-@media (prefers-color-scheme: dark) {
-  .container {
-    color: #fff;
-    background-color: #000;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .iconContainer {
-    background-color: #000;
-  }
-
-  .iconContainer > * {
-    color: #fff;
-  }
-}

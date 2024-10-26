@@ -5,7 +5,7 @@ const ProjectsSection = () => {
   return (
     <>
       <Carousel images={carouselImageCollection} />
-      <h1 className="text-2xl text-center m-2 shadow-md italic">Projects</h1>
+      <h1 className="text-2xl text-center m-2 shadow-md italic">🌐 Projects</h1>
       <div className="rounded overflow-hidden shadow-lg flex flex-col flex-wrap sm:flex-row">
         {projectData.map((project) => {
           return (

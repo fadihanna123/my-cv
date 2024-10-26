@@ -2,16 +2,18 @@ import { IMAGES } from "../utils/consts";
 
 const PersonCardSection: React.FC = () => {
   return (
-    <div className="w-full border p-2 rounded personCardSection flex justify-around ">
-      <div className="">
+    <div className="w-full border p-2 rounded personCardSection flex justify-around sm:flex-row flex-col">
+      <div>
         <img
-          className="relative w-[300px] h-[300px] border-solid border-[#000] rounded-full max-w-[100%] animateIt iterateCountOnce"
+          className="relative sm:w-[300px] h-[300px] border-solid border-[#000] rounded-full max-w-[100%] animateIt iterateCountOnce"
           src={IMAGES.myProfilePic}
           alt="myProfilePic"
         />
       </div>
       <div className="mt-20">
-        <h1 className="text-6xl iterateCountOnce text-[#000]">Fadi Hanna</h1>
+        <h1 className="text-6xl iterateCountOnce text-[#000] text-center">
+          Fadi Hanna
+        </h1>
         <h4 className="text-2xl iterateCountOnce text-center text-sky-600">
           {" "}
           Frontend developer{" "}
