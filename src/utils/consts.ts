@@ -1,4 +1,4 @@
-const IMAGES = {
+const IMAGES: Record<string, string> = {
   myProfilePic: new URL("../assets/myProfilePic.JPG", import.meta.url).href,
   Pixabayfinder: new URL("../assets/Pixabayfinder.png", import.meta.url).href,
   CameraWebsite: new URL("../assets/CameraWebsite.png", import.meta.url).href,
@@ -9,7 +9,7 @@ const IMAGES = {
   Intranat: new URL("../assets/Intranat.png", import.meta.url).href,
 };
 
-const carouselImageCollection = [
+const carouselImageCollection: string[] = [
   IMAGES.CV_React,
   IMAGES.CameraWebsite,
   IMAGES.ChatMe,
@@ -164,7 +164,7 @@ const projectData: projectData[] = [
   },
 ];
 
-const skills = [
+const skills: skillsData[] = [
   {
     id: 1,
     value: "ReactJS",

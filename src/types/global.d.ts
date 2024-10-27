@@ -24,6 +24,12 @@ declare global {
     GitURL: string;
     assetPath: string;
   }
+
+  interface skillsData {
+    id: number;
+    value: string;
+    icon: string;
+  }
 }
 
 export {};
