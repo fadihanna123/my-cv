@@ -2,8 +2,8 @@ import { eduData } from "../utils/consts";
 import TxtSection from "../ui/TxtSection";
 
 const EducationSection: React.FC = () => (
-  <div className="sm:text-center text-left text-xl mt-2" id="education">
-    <h1 className="text-3xl text-center">
+  <div className="sm:text-center text-left text-xl" id="education">
+    <h1 className="text-3xl text-center my-4 italic">
       <i className="fa-solid fa-book"></i> Education
     </h1>
 

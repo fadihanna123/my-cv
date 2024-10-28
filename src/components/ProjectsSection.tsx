@@ -1,10 +1,9 @@
-import Carousel from "../ui/Carousel";
-import { carouselImageCollection, projectData } from "../utils/consts";
+import { projectData } from "../utils/consts";
 
 const ProjectsSection = () => (
   <>
-    <Carousel images={carouselImageCollection} />
-    <h1 className="text-2xl text-center m-2 shadow-md italic">🌐 Projects</h1>
+    {/*  <Carousel images={carouselImageCollection} /> */}
+    <h1 className="text-3xl text-center my-4 shadow-md italic"> 🌐 Projects</h1>
     <div className="rounded overflow-hidden shadow-lg flex flex-col flex-wrap sm:flex-row">
       {projectData.map((project) => {
         return (
@@ -27,11 +26,11 @@ const ProjectsSection = () => (
             </div>
             <div className="iconContainer w-[100%] bg-[#fff] text-[#000] mt-2">
               <a href={project.GitURL} className="m-2" target="_blank">
-                <i className="fa-brands fa-github text-2xl"></i>
+                <i className="fa-brands fa-github text-2xl hover:animate-bounce"></i>
               </a>
               {project.URL ? (
                 <a href={project.URL} className="m-2" target="_blank">
-                  <i className="fa-solid fa-globe text-2xl"></i>
+                  <i className="fa-solid fa-globe text-2xl hover:animate-bounce"></i>
                 </a>
               ) : (
                 ""

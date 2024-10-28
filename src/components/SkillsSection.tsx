@@ -1,8 +1,8 @@
 import { skills } from "../utils/consts";
 
 const SkillsSection = () => (
-  <div className="text-center mt-2">
-    <span className="text-3xl"> 🧑‍💻 Skills </span>
+  <div className="text-center">
+    <h1 className="text-3xl my-4 italic"> 🧑‍💻 Skills </h1>
     <section className="text-lg m-2 flex flex-wrap">
       {skills.map((skill) => {
         return (
