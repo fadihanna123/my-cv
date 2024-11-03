@@ -6,5 +6,8 @@ services:
       - 3000:3000
     volumes:
       - ./:/app
-      - /app/node_modules
+      - nodemodules:/app/node_modules
     command: yarn dev
+
+volumes:
+  nodemodules:
