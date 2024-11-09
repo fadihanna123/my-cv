@@ -1,5 +1,5 @@
-import { eduData } from "../utils/consts";
 import TxtSection from "../ui/TxtSection";
+import { eduData } from "../utils/consts";
 
 const EducationSection: React.FC = () => (
   <div className="sm:text-center text-left text-xl" id="education">

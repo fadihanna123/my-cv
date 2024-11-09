@@ -1,5 +1,5 @@
-import { expeData } from "../utils/consts";
 import TxtSection from "../ui/TxtSection";
+import { expeData } from "../utils/consts";
 
 const ExperienceSection: React.FC = () => (
   <div className="text-xl">

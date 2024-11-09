@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import { it, expect } from "vitest";
+import { expect, it } from "vitest";
 import Layout from "../app/Layout";
 
 it("Render Layout", () => {

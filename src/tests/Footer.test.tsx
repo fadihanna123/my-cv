@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import { it, expect } from "vitest";
+import { expect, it } from "vitest";
 import Footer from "../inc/Footer";
 
 it("Render Footer", () => {

@@ -1,6 +1,6 @@
 import {
-  ExperienceSection,
   EducationSection,
+  ExperienceSection,
   PersonCardSection,
   ProjectsSection,
   SkillsSection,
