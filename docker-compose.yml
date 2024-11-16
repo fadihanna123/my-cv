@@ -7,7 +7,6 @@ services:
     volumes:
       - ./:/app
       - nodemodules:/app/node_modules
-    command: yarn dev
 
 volumes:
   nodemodules:
