@@ -3,7 +3,6 @@ build:
 	@echo "Build complete"
 
 deploy:
-	yarn build
 	yarn deploy
 
 run:
