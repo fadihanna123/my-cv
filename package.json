@@ -7,14 +7,14 @@
     "dev": "vite",
     "prebuild": "rimraf dist",
     "format": "prettier . -w",
-    "setup": "yarn --silent --emoji --ignore-scripts --imutable",
+    "setup": "pnpm i --silent --ignore-scripts --frozen-lockfile",
     "clear": "rimraf node_modules dist",
-    "build": "yarn prebuild && tsc && vite build",
+    "build": "pnpm run prebuild && tsc && vite build",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0 && stylelint **/*.css",
     "preview": "vite preview",
-    "deploy": "yarn && yarn build && gh-pages -d dist",
+    "deploy": "pnpm i && pnpm run build && gh-pages -d dist",
     "test": "vitest",
-    "ci": "yarn build && yarn lint"
+    "ci": "pnpm run build && pnpm run lint"
   },
   "dependencies": {
     "react": "^18.3.1",

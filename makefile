@@ -1,9 +1,9 @@
 build: 
-	yarn build
+	pnpm run build
 	@echo "Build complete"
 
 deploy:
-	yarn deploy
+	pnpm run deploy
 
 run:
-	yarn dev
+	pnpm run dev
