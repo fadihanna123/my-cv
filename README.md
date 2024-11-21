@@ -19,18 +19,18 @@ cd my-cv
 
 ```sh
 # Install dependencies
-pnpm i
+yarn setup
 ```
 
 ```sh
 # Start the server
-pnpm run dev
+yarn dev
 # Go to http://localhost:3000
 ```
 
 ```sh
 # Testing
-pnpm run test
+yarn test
 ```
 
 ## 🤝 Contributing
