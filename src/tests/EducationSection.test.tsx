@@ -1,7 +1,7 @@
+import EducationSection from "@components/EducationSection";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 import { expect, it } from "vitest";
-import EducationSection from "../components/EducationSection";
 
 it("Render EducationSection", () => {
   const { getByText } = render(<EducationSection />);

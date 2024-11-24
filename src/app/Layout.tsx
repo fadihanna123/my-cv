@@ -5,8 +5,7 @@ import {
   ProjectsSection,
   SkillsSection,
 } from "../components";
-import Footer from "../inc/Footer";
-import Header from "../inc/Header";
+import { Footer, Header } from "../inc";
 
 const Layout: React.FC = () => (
   <div className="container bg-[#fff] text-lg m-0 p-0 border-0 outline-0 text-[#000] font-bold overflow-auto">

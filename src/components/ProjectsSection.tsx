@@ -1,4 +1,4 @@
-import { projectData } from "../utils/consts";
+import { projectData } from "@utils/consts";
 
 const ProjectsSection = () => (
   <>

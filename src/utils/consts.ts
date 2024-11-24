@@ -228,10 +228,10 @@ const skills: skillsData[] = [
 ];
 
 export {
-  expeData,
-  eduData,
-  projectData,
   IMAGES,
-  skills,
   carouselImageCollection,
+  eduData,
+  expeData,
+  projectData,
+  skills,
 };

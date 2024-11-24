@@ -1,4 +1,4 @@
-import { IMAGES } from "../utils/consts";
+import { IMAGES } from "@utils/consts";
 
 const PersonCardSection: React.FC = () => (
   <div className="w-full border p-2 rounded personCardSection flex justify-around sm:flex-row flex-col">

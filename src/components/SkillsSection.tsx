@@ -1,4 +1,4 @@
-import { skills } from "../utils/consts";
+import { skills } from "@utils/consts";
 
 const SkillsSection = () => (
   <div className="text-center">
