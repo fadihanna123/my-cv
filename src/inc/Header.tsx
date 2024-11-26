@@ -9,7 +9,7 @@ const Header: React.FC = () => (
       </li>
       <li className="sm:inline block m-4 p-4">
         <a href="#experience">
-          <span className="mr-1 text-3xl">🧑‍💻</span>
+          <span className="mr-1 text-2xl">🧑‍💻</span>
           <span className="ml-2">Experience</span>
         </a>
       </li>
