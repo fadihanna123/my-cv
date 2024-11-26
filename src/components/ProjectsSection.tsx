@@ -3,7 +3,10 @@ import { projectData } from "@utils/consts";
 const ProjectsSection = () => (
   <>
     {/*  <Carousel images={carouselImageCollection} /> */}
-    <h1 className="text-3xl text-center my-4 shadow-md italic"> 🌐 Projects</h1>
+    <h1 className="text-3xl text-center my-4 shadow-md">
+      <i className="fa-solid fa-briefcase mr-2"></i>
+      <span className="italic mr-9 ml-2">Projects</span>
+    </h1>
     <div className="rounded overflow-hidden shadow-lg flex flex-col flex-wrap sm:flex-row">
       {projectData.map((project) => {
         return (
