@@ -4302,10 +4302,10 @@ vite-node@2.1.5:
     pathe "^1.1.2"
     vite "^5.0.0"
 
-vite-plugin-minify@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/vite-plugin-minify/-/vite-plugin-minify-2.0.1.tgz#a94f8e8dc648cb5c2b193b6eb6a465f2bd65b205"
-  integrity sha512-NZt9mT+kWtaLaBkGyS852W/qz7DVtaI5H1U0sWusMH/A9rG1Qi4yT089bVmex8s7WubWJC1Fk0PmGR1ZrLmSRQ==
+vite-plugin-minify@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-minify/-/vite-plugin-minify-2.1.0.tgz#624ca038c7d6e6f72dcc618bce1eeb42e49e3983"
+  integrity sha512-h+Ae0WX0mvrWM4GhE6JX2NmxlDuZRv4AgcTHFqfbSyPwS+OdlOM692AQrK0eO8lDEh7gYLjG3EHovKvtrNQDvA==
   dependencies:
     "@types/html-minifier-terser" "^7.0.2"
     html-minifier-terser "^7.2.0"
