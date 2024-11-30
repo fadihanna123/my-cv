@@ -1,5 +1,5 @@
 const Header: React.FC = () => (
-  <nav className="sm:text-right text-center sm:text-lg text-2xl mt-2">
+  <nav className="sm:text-right text-center sm:text-lg text-2xl mt-2 mb-10">
     <ul>
       <li className="sm:inline block m-4 p-4">
         <a href="#education">

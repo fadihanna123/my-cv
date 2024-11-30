@@ -1,4 +1,4 @@
-const IMAGES: Record<string, string> = {
+const IMAGES: Record<ImagesKeys, string> = {
   myProfilePic: new URL("../assets/myProfilePic.JPG", import.meta.url).href,
   Pixabayfinder: new URL("../assets/Pixabayfinder.png", import.meta.url).href,
   CameraWebsite: new URL("../assets/CameraWebsite.png", import.meta.url).href,
@@ -7,6 +7,10 @@ const IMAGES: Record<string, string> = {
   Datahjalp: new URL("../assets/Datahjalp.png", import.meta.url).href,
   Dinrestaurang: new URL("../assets/Dinrestaurang.png", import.meta.url).href,
   Intranat: new URL("../assets/Intranat.png", import.meta.url).href,
+  My_CV: new URL("../assets/my_cv.png", import.meta.url).href,
+  E_handelProject: new URL("../assets/E-handelproject.png", import.meta.url)
+    .href,
+  ChatApp2: new URL("../assets/Chatapp2.png", import.meta.url).href,
 };
 
 const carouselImageCollection: string[] = [
@@ -134,7 +138,7 @@ const projectData: projectData[] = [
     id: 4,
     title: "Old My CV",
     desc: "🏢 A website to show my CV in webapplication.",
-    URL: "",
+    URL: undefined,
     GitURL: "https://github.com/fadihanna123/CV_React/",
     assetPath: IMAGES.CV_React,
   },
@@ -142,7 +146,7 @@ const projectData: projectData[] = [
     id: 5,
     title: "Din Restaurang",
     desc: "🍔 A restaurantapplication and adminpanel as shows and manages 5 food types.",
-    URL: "",
+    URL: undefined,
     GitURL: "https://github.com/fadihanna123/Din_Restaurang/",
     assetPath: IMAGES.Dinrestaurang,
   },
@@ -150,17 +154,41 @@ const projectData: projectData[] = [
     id: 6,
     title: "Chat Me",
     desc: "💬 A chatapplication to chat other people in the public chat. All messages will be shown in the chatroom.",
-    URL: "",
+    URL: undefined,
     GitURL: "https://github.com/fadihanna123/chatMe/",
     assetPath: IMAGES.ChatMe,
   },
   {
     id: 7,
     title: "Camera Website",
-    desc: "",
-    URL: "",
+    desc: undefined,
+    URL: undefined,
     GitURL: "https://github.com/fadihanna123/CameraWebsite/",
     assetPath: IMAGES.CameraWebsite,
+  },
+  {
+    id: 8,
+    title: "My CV (current)",
+    desc: "🧑‍💼My CV is my portfolio website to show my experiences, projects and education.",
+    URL: "https://fadihanna123.github.io/my-cv",
+    GitURL: "https://github.com/fadihanna123/my-cv",
+    assetPath: IMAGES.My_CV,
+  },
+  {
+    id: 9,
+    title: "Billigast & Begagnade",
+    desc: undefined,
+    URL: undefined,
+    GitURL: "https://github.com/fadihanna123/E-handelprojekt",
+    assetPath: IMAGES.E_handelProject,
+  },
+  {
+    id: 10,
+    title: "Chat App 2",
+    desc: undefined,
+    URL: undefined,
+    GitURL: "https://github.com/fadihanna123/chatapp",
+    assetPath: IMAGES.ChatApp2,
   },
 ];
 
