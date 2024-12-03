@@ -19,10 +19,10 @@ declare global {
   interface projectData {
     id: number;
     title: string;
-    desc: string;
-    URL: string;
+    desc: string | undefined;
+    URL: string | undefined;
     GitURL: string;
-    assetPath: string;
+    assetPath: string | undefined;
   }
 
   interface skillsData {
@@ -30,6 +30,19 @@ declare global {
     value: string;
     icon: string;
   }
+
+  type ImagesKeys =
+    | "myProfilePic"
+    | "Pixabayfinder"
+    | "CameraWebsite"
+    | "ChatMe"
+    | "CV_React"
+    | "Datahjalp"
+    | "Dinrestaurang"
+    | "Intranat"
+    | "My_CV"
+    | "E_handelProject"
+    | "ChatApp2";
 }
 
 export {};

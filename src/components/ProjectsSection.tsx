@@ -2,7 +2,6 @@ import { projectData } from "@utils/consts";
 
 const ProjectsSection = () => (
   <>
-    {/*  <Carousel images={carouselImageCollection} /> */}
     <h1 className="text-3xl text-center my-4 shadow-md">
       <i className="fa-solid fa-briefcase mr-2"></i>
       <span className="italic mr-9 ml-2">Projects</span>
@@ -15,16 +14,20 @@ const ProjectsSection = () => (
             key={project.id}
           >
             <img
-              className="w-full h-[500px]"
+              className="w-full h-[500px] p-2"
               src={project.assetPath}
               alt={project.assetPath}
             />
             <div className="py-4 p-2">
-              <div
-                className={`font-bold text-xl mb-2 ${project.desc && "h-[170px]"}`}
-              >
+              <div className={`font-bold text-xl mb-2 h-[170px]`}>
                 <h1> {project.title} </h1>
-                <p className="text-center text-[18px]">{project.desc}</p>
+                <p className="text-center text-[18px]">
+                  {project.desc ? (
+                    project.desc
+                  ) : (
+                    <small className="italic">No description</small>
+                  )}
+                </p>
               </div>
             </div>
             <div className="iconContainer w-[100%] bg-[#fff] text-[#000] mt-2">
@@ -42,6 +45,17 @@ const ProjectsSection = () => (
           </div>
         );
       })}
+    </div>
+    <div className="text-center text-xl">
+      And many other in <br />
+      <a
+        target="_blank"
+        className="text-blue-500"
+        href="https://github.com/fadihanna123?tab=repositories"
+      >
+        Github profile
+      </a>
+      ...
     </div>
   </>
 );
