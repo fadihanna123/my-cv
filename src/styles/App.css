@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @media (width >= 640px) {
-  .container {
+  .wrapper {
     max-width: 100%;
   }
 }
@@ -97,13 +97,13 @@
   }
 }
 
-.container {
+.wrapper {
   font-family: Georgia, "Times New Roman", Times, serif;
   transition: all 0.3s;
 }
 
 @media (prefers-color-scheme: dark) {
-  .container {
+  .wrapper {
     color: #fff;
     background-color: #000;
     box-shadow: 12px 12px 2px 100px rgba(250, 250, 250, 65.9%);

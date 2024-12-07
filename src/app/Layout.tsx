@@ -8,7 +8,7 @@ import {
 import { Footer, Header } from "../inc";
 
 const Layout: React.FC = () => (
-  <div className="container bg-[#fff] text-lg m-0 p-0 border-0 outline-0 text-[#000] font-bold overflow-auto">
+  <div className="container wrapper bg-[#fff] text-lg m-0 p-0 border-0 outline-0 text-[#000] font-bold overflow-auto">
     <Header />
     <div>
       <div className="border-[#000] border-solid border-r-2 p-2">
