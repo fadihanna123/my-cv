@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Carousel: React.FC<{ images: string[] }> = ({
   images,
@@ -33,7 +34,11 @@ const Carousel: React.FC<{ images: string[] }> = ({
   return (
     <div className="max-w-[1200px] w-[100%] h-[500px] carouselContainer transition-transform	">
       <div className="w-[100%] h-[100%] relative">
-        <img src={images[index]} className="w-[100%] h-[100%] block" />
+        <Image
+          alt="CarouselImage"
+          src={images[index]}
+          className="w-[100%] h-[100%] block"
+        />
         <button
           onClick={showPrevImage}
           className="block absolute top-0 bottom-0 p-4 cursor-pointer left-0 carouselBtn"

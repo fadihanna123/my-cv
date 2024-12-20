@@ -11,3 +11,6 @@ dist
 
 # Next JS
 .next/
+
+# Build
+build

@@ -6,7 +6,7 @@
   "scripts": {
     "setup": "yarn --silent --ignore-scripts --emoji --immutable",
     "dev": "next dev",
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf dist .next build",
     "format": "prettier . -w",
     "build": "yarn prebuild && tsc && next build",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0 && stylelint **/*.css",
@@ -34,6 +34,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "eslint": "9.17.0",
+    "eslint-config-next": "^15.1.2",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.16",

@@ -24,6 +24,8 @@ export default [
       "eslint:recommended",
       "plugin:@typescript-eslint/recommended",
       "plugin:react-hooks/recommended",
+      "next",
+      "next/core-web-vitals",
     ),
   ),
   {
@@ -40,6 +42,7 @@ export default [
     },
 
     rules: {
+      "@typescript-eslint/no-explicit-any": "off",
       "react-refresh/only-export-components": [
         "warn",
         {
