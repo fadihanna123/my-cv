@@ -1,4 +1,3 @@
-import myProfilePic from "@assets/myProfilePic.JPG";
 import Image from "next/image";
 
 const PersonCardSection: React.FC = () => (
@@ -6,8 +5,10 @@ const PersonCardSection: React.FC = () => (
     <div>
       <Image
         className="relative sm:w-[300px] h-[300px] border-solid border-[#000] rounded-full max-w-[100%] animateIt"
-        src={myProfilePic}
+        src="/myProfilePic.JPG"
         alt="myProfilePic"
+        width={300}
+        height={300}
       />
     </div>
     <div className="mt-20">

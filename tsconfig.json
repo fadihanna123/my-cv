@@ -3,7 +3,11 @@
     "baseUrl": ".",
     "target": "ES2017",
     "useDefineForClassFields": true,
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "esnext",
     "skipLibCheck": true,
     /* Bundler mode */
@@ -20,14 +24,28 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "typeRoots": ["app/types/"],
+    "typeRoots": [
+      "app/types/"
+    ],
     "paths": {
-      "@app/*": ["app/*"],
-      "@assets/*": ["app/assets/*"],
-      "@components/*": ["app/components/*"],
-      "@utils/*": ["app/utils/*"],
-      "@styles/*": ["app/styles/*"],
-      "@tests/*": ["app/tests/*"]
+      "@app/*": [
+        "app/*"
+      ],
+      "@assets/*": [
+        "app/assets/*"
+      ],
+      "@components/*": [
+        "app/components/*"
+      ],
+      "@utils/*": [
+        "app/utils/*"
+      ],
+      "@styles/*": [
+        "app/styles/*"
+      ],
+      "@tests/*": [
+        "app/tests/*"
+      ]
     },
     "incremental": true,
     "esModuleInterop": true,
@@ -38,6 +56,12 @@
     ],
     "allowJs": true
   },
-  "include": ["**/*.ts", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "**/*.ts",
+    ".next/types/**/*.ts",
+    "build/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

@@ -1,22 +1,14 @@
-import Pixabayfinder from "@assets/Pixabayfinder.png";
-import CV_React from "@assets/CV_React.png";
-import CameraWebsite from "@assets/CameraWebsite.png";
-import ChatMe from "@assets/ChatMe.png";
-import Datahjalp from "@assets/Datahjalp.png";
-import Dinrestaurang from "@assets/Dinrestaurang.png";
-import Intranat from "@assets/Intranat.png";
-import ChatApp2 from "@assets/Chatapp2.png";
-import My_CV from "@assets/my_cv.png";
-import E_handelProject from "@assets/E-handelproject.png";
-
 const carouselImageCollection = [
-  CV_React,
-  CameraWebsite,
-  ChatMe,
-  Datahjalp,
-  Dinrestaurang,
-  Intranat,
-  Pixabayfinder,
+  "/Pixabayfinder.png",
+  "/CV_React.png",
+  "/CameraWebsite.png",
+  "/ChatMe.png",
+  "/Datahjalp.png",
+  "/Dinrestaurang.png",
+  "/Intranat.png",
+  "/Chatapp2.png",
+  "/my_cv.png",
+  "/E-handelproject.png",
 ];
 
 const expeData: expeEduData[] = [
@@ -112,7 +104,7 @@ const projectData: projectData[] = [
     desc: "🖼️ An app to fetch images and videos from Pixabay.",
     URL: "https://pixabayfinderx.netlify.app/",
     GitURL: "https://github.com/fadihanna123/PixabayFinder/",
-    assetPath: Pixabayfinder,
+    assetPath: "/Pixabayfinder.png",
   },
   {
     id: 2,
@@ -120,7 +112,7 @@ const projectData: projectData[] = [
     desc: "🧑‍💼A dashboard application that helps staff communicate with their managers.",
     URL: "https://intranet.gssonsel.se.185-133-206-116.bb.kringelstan.se/",
     GitURL: "https://github.com/fadihanna123/Intranat/",
-    assetPath: Intranat,
+    assetPath: "/Intranat.png",
   },
   {
     id: 3,
@@ -128,7 +120,7 @@ const projectData: projectData[] = [
     desc: "💻 Datahjälp is a company that informs customers about the company's prices and contact details for these companies. Datahjälp helps customers fix their computers.",
     URL: "https://fadihanna123.github.io/DatahjalpProjekt/",
     GitURL: "https://github.com/fadihanna123/DatahjalpProjekt/",
-    assetPath: Datahjalp,
+    assetPath: "/Datahjalp.png",
   },
   {
     id: 4,
@@ -136,7 +128,7 @@ const projectData: projectData[] = [
     desc: "🏢 A website to show my CV in webapplication.",
     URL: undefined,
     GitURL: "https://github.com/fadihanna123/CV_React/",
-    assetPath: CV_React,
+    assetPath: "/CV_React.png",
   },
   {
     id: 5,
@@ -144,7 +136,7 @@ const projectData: projectData[] = [
     desc: "🍔 A restaurantapplication and adminpanel as shows and manages 5 food types.",
     URL: undefined,
     GitURL: "https://github.com/fadihanna123/Din_Restaurang/",
-    assetPath: Dinrestaurang,
+    assetPath: "/Dinrestaurang.png",
   },
   {
     id: 6,
@@ -152,7 +144,7 @@ const projectData: projectData[] = [
     desc: "💬 A chatapplication to chat other people in the public chat. All messages will be shown in the chatroom.",
     URL: undefined,
     GitURL: "https://github.com/fadihanna123/chatMe/",
-    assetPath: ChatMe,
+    assetPath: "/ChatMe.png",
   },
   {
     id: 7,
@@ -160,7 +152,7 @@ const projectData: projectData[] = [
     desc: undefined,
     URL: undefined,
     GitURL: "https://github.com/fadihanna123/CameraWebsite/",
-    assetPath: CameraWebsite,
+    assetPath: "/CameraWebsite.png",
   },
   {
     id: 8,
@@ -168,7 +160,7 @@ const projectData: projectData[] = [
     desc: "🧑‍💼My CV is my portfolio website to show my experiences, projects and education.",
     URL: "https://fadihanna123.github.io/my-cv",
     GitURL: "https://github.com/fadihanna123/my-cv",
-    assetPath: My_CV,
+    assetPath: "/my_cv.png",
   },
   {
     id: 9,
@@ -176,7 +168,7 @@ const projectData: projectData[] = [
     desc: undefined,
     URL: undefined,
     GitURL: "https://github.com/fadihanna123/E-handelprojekt",
-    assetPath: E_handelProject,
+    assetPath: "/E-handelproject.png",
   },
   {
     id: 10,
@@ -184,7 +176,7 @@ const projectData: projectData[] = [
     desc: undefined,
     URL: undefined,
     GitURL: "https://github.com/fadihanna123/chatapp",
-    assetPath: ChatApp2,
+    assetPath: "/Chatapp2.png",
   },
 ];
 

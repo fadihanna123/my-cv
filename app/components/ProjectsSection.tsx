@@ -18,6 +18,8 @@ const ProjectsSection = () => (
               className="w-full h-[500px] p-2"
               src={project.assetPath}
               alt={project.assetPath}
+              width={0}
+              height={500}
             />
             <div className="py-4 p-2">
               <div className={`font-bold text-xl mb-2 h-[170px]`}>
