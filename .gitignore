@@ -14,3 +14,4 @@ dist
 
 # Build
 build
+tsconfig.tsbuildinfo

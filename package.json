@@ -10,7 +10,7 @@
     "format": "prettier . -w",
     "build": "yarn prebuild && tsc && next build",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0 && stylelint **/*.css",
-    "deploy": "yarn setup && yarn build && gh-pages -d dist",
+    "deploy": "yarn setup && yarn build && gh-pages -d build",
     "test": "vitest",
     "ci": "yarn build && yarn lint",
     "clear": "rimraf node_modules dist"
