@@ -15,3 +15,5 @@ dist
 # Build
 build
 tsconfig.tsbuildinfo
+# Local Netlify folder
+.netlify
