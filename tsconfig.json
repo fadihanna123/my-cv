@@ -54,7 +54,8 @@
         "name": "next"
       }
     ],
-    "allowJs": true
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "**/*.ts",
