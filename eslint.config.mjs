@@ -17,15 +17,19 @@ const compat = new FlatCompat({
 
 export default [
   {
-    ignores: ["dist/**", "**/.eslintrc.cjs"],
+    ignores: [
+      "build/**",
+      "**/eslint.config.mjs",
+      "node_modules",
+      ".next",
+      ".netlify",
+    ],
   },
   ...fixupConfigRules(
     compat.extends(
       "eslint:recommended",
       "plugin:@typescript-eslint/recommended",
       "plugin:react-hooks/recommended",
-      "next",
-      "next/core-web-vitals",
     ),
   ),
   {
