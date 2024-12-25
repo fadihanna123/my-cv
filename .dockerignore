@@ -24,3 +24,6 @@ LICENSE
 
 # Config
 .editorconfig
+
+# Nextjs
+.next
