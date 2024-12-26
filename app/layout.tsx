@@ -9,7 +9,7 @@ const rootLayout: React.FC<{ children: React.ReactNode }> = ({
   children: React.ReactNode;
 }) => {
   return (
-    <html>
+    <html lang="en" className="scroll-smooth">
       <head>
         <link
           rel="stylesheet"
@@ -26,3 +26,4 @@ const rootLayout: React.FC<{ children: React.ReactNode }> = ({
 };
 
 export default rootLayout;
+
