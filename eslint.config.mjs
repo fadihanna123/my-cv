@@ -6,6 +6,7 @@ import reactRefresh from "eslint-plugin-react-refresh";
 import globals from "globals";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import pluginNext from "@next/eslint-plugin-next";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -17,13 +18,7 @@ const compat = new FlatCompat({
 
 export default [
   {
-    ignores: [
-      "build/**",
-      "**/eslint.config.mjs",
-      "node_modules",
-      ".next",
-      ".netlify",
-    ],
+    ignores: ["build/**", "**/eslint.config.mjs", "node_modules", ".next"],
   },
   ...fixupConfigRules(
     compat.extends(
@@ -35,6 +30,7 @@ export default [
   {
     plugins: {
       "react-refresh": reactRefresh,
+      "@next/next": pluginNext,
     },
 
     languageOptions: {
@@ -46,6 +42,7 @@ export default [
     },
 
     rules: {
+      ...pluginNext.configs.recommended.rules,
       "@typescript-eslint/no-explicit-any": "off",
       "react-refresh/only-export-components": [
         "warn",
