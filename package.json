@@ -1,11 +1,11 @@
 {
   "name": "my-cv",
   "private": true,
-  "version": "0.0.18",
+  "version": "0.0.19",
   "type": "module",
   "scripts": {
     "setup": "yarn --silent --ignore-scripts --emoji --immutable",
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "prebuild": "rimraf dist .next build",
     "format": "prettier . -w",
     "build": "yarn prebuild && tsc && next build",
@@ -20,9 +20,9 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.2.4",
+    "@eslint/compat": "^1.2.5",
     "@eslint/eslintrc": "^3.2.0",
-    "@eslint/js": "^9.17.0",
+    "@eslint/js": "^9.18.0",
     "@next/eslint-plugin-next": "^15.1.4",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -34,7 +34,7 @@
     "@typescript-eslint/parser": "^8.19.1",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
-    "eslint": "9.17.0",
+    "eslint": "9.18.0",
     "eslint-config-next": "^15.1.4",
     "eslint-plugin-react": "^7.37.3",
     "eslint-plugin-react-hooks": "^5.1.0",
