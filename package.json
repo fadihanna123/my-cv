@@ -9,10 +9,11 @@
     "prebuild": "rimraf dist .next build",
     "format": "prettier . -w",
     "build": "yarn prebuild && tsc && next build",
-    "lint": "eslint . --report-unused-disable-directives --max-warnings 0 && stylelint **/*.css",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0 && stylelint **/*.css && yarn type-check",
     "test": "vitest",
     "ci": "yarn build && yarn lint",
-    "clear": "rimraf node_modules dist"
+    "clear": "rimraf node_modules dist",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^19.0.0",
