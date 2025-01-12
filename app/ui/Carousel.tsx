@@ -32,24 +32,24 @@ const Carousel: React.FC<{ images: string[] }> = ({
   }, [images.length]);
 
   return (
-    <div className="max-w-[1200px] w-[100%] h-[500px] carouselContainer transition-transform	">
-      <div className="w-[100%] h-[100%] relative">
+    <div className="carouselContainer h-[500px] w-full max-w-[1200px] transition-transform	">
+      <div className="relative size-full">
         <Image
           alt="CarouselImage"
           src={images[index]}
-          className="w-[100%] h-[100%] block"
+          className="block size-full"
         />
         <button
           onClick={showPrevImage}
-          className="block absolute top-0 bottom-0 p-4 cursor-pointer left-0 carouselBtn"
+          className="carouselBtn absolute inset-y-0 left-0 block cursor-pointer p-4"
         >
-          <i className="fa-solid fa-left-long stroke-white fill-black w-8"></i>
+          <i className="fa-solid fa-left-long w-8 fill-black stroke-white"></i>
         </button>
         <button
           onClick={showNextImage}
-          className="block absolute top-0 bottom-0 p-4 cursor-pointer right-0 carouselBtn"
+          className="carouselBtn absolute inset-y-0 right-0 block cursor-pointer p-4"
         >
-          <i className="fa-solid fa-right-long stroke-white fill-black w-8"></i>
+          <i className="fa-solid fa-right-long w-8 fill-black stroke-white"></i>
         </button>
       </div>
     </div>

@@ -25,6 +25,7 @@ export default [
       "eslint:recommended",
       "plugin:@typescript-eslint/recommended",
       "plugin:react-hooks/recommended",
+      "plugin:tailwindcss/recommended",
     ),
   ),
   {
@@ -51,6 +52,7 @@ export default [
         },
       ],
       "no-console": "error",
+      "tailwindcss/no-custom-classname": "off",
     },
   },
 ];

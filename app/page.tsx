@@ -10,16 +10,16 @@ import {
 import { Footer, Header } from "./inc";
 
 const Layout: React.FC = () => (
-  <div className="container wrapper bg-[#fff] text-lg m-0 p-0 border-0 outline-0 text-[#000] font-bold overflow-auto">
+  <div className="wrapper container m-0 overflow-auto border-0 bg-white p-0 text-lg font-bold text-black outline-0">
     <Header />
     <div>
-      <div className="border-[#000] border-solid border-r-2 p-2">
+      <div className="border-r-2 border-solid border-black p-2">
         <PersonCardSection />
       </div>
       <div>
         <SkillsSection />
       </div>
-      <div className="border-[#000] border-solid border-r-2 p-2 sm:ml-20 ml-0">
+      <div className="ml-0 border-r-2 border-solid border-black p-2 sm:ml-20">
         <div id="experience">
           <ExperienceSection />
           <EducationSection />

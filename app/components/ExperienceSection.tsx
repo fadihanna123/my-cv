@@ -6,14 +6,14 @@ import CountUp from "react-countup";
 const ExperienceSection: React.FC = () => {
   return (
     <div className="text-xl">
-      <h1 className="text-3xl text-center my-4">
-        <span className="sm:mr-2 mr-6 text-4xl">🧑‍💻</span>
-        <span className="italic sm:mr-6 sm:ml-2">Experience</span>
+      <h1 className="my-4 text-center text-3xl">
+        <span className="mr-6 text-4xl sm:mr-2">🧑‍💻</span>
+        <span className="italic sm:ml-2 sm:mr-6">Experience</span>
         <br />
         <br />
-        <div className="flex justify-center items-center sm:mr-14 sm:ml-auto ml-5">
-          <i className="fa-solid fa-clock fa-fw sm:mr-1 mr-5"></i>
-          <span className="italic sm:mr-6 sm:ml-2 mr-[80px]">
+        <div className="ml-5 flex items-center justify-center sm:ml-auto sm:mr-14">
+          <i className="fa-solid fa-clock fa-fw mr-5 sm:mr-1"></i>
+          <span className="mr-[80px] italic sm:ml-2 sm:mr-6">
             <CountUp
               start={0}
               end={2.5}
@@ -26,7 +26,7 @@ const ExperienceSection: React.FC = () => {
         </div>
       </h1>
 
-      <div className="flex sm:text-center text-left flex-wrap mt-2 sm:flex-row flex-col">
+      <div className="mt-2 flex flex-col flex-wrap text-left sm:flex-row sm:text-center">
         {expeData.map((expe: expeEduData) => {
           return (
             <TxtSection

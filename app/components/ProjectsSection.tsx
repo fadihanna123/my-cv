@@ -3,26 +3,26 @@ import Image from "next/image";
 
 const ProjectsSection = () => (
   <>
-    <h1 className="text-3xl text-center my-4 shadow-md">
+    <h1 className="my-4 text-center text-3xl shadow-md">
       <i className="fa-solid fa-briefcase mr-2"></i>
-      <span className="italic mr-9 ml-2">Projects</span>
+      <span className="ml-2 mr-9 italic">Projects</span>
     </h1>
-    <div className="rounded overflow-hidden shadow-lg flex flex-col flex-wrap sm:flex-row">
+    <div className="flex flex-col flex-wrap overflow-hidden rounded shadow-lg sm:flex-row">
       {projectData.map((project) => {
         return (
           <div
-            className="sm:w-[50%] p-2 border mt-2 rounded text-center w-[100%]"
+            className="mt-2 w-full rounded border p-2 text-center sm:w-1/2"
             key={project.id}
           >
             <Image
-              className="w-full h-[500px] p-2"
+              className="h-[500px] w-full p-2"
               src={project.assetPath}
               alt={project.assetPath}
               width={0}
               height={500}
             />
-            <div className="py-4 p-2">
-              <div className={`font-bold text-xl mb-2 h-[170px]`}>
+            <div className="p-2 py-4">
+              <div className={`mb-2 h-[170px] text-xl font-bold`}>
                 <h1> {project.title} </h1>
                 <p className="text-center text-[18px]">
                   {project.desc ? (
@@ -33,7 +33,7 @@ const ProjectsSection = () => (
                 </p>
               </div>
             </div>
-            <div className="iconContainer w-[100%] bg-[#fff] text-[#000] mt-2">
+            <div className="iconContainer mt-2 w-full bg-white text-black">
               <a href={project.GitURL} className="m-2" target="_blank">
                 <i className="fa-brands fa-github text-2xl hover:animate-bounce"></i>
               </a>

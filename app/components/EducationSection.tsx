@@ -2,10 +2,10 @@ import { eduData } from "@utils/consts";
 import TxtSection from "../ui/TxtSection";
 
 const EducationSection: React.FC = () => (
-  <div className="sm:text-center text-left text-xl" id="education">
-    <h1 className="text-3xl text-center my-4">
+  <div className="text-left text-xl sm:text-center" id="education">
+    <h1 className="my-4 text-center text-3xl">
       <i className="fa-solid fa-book mr-2"></i>
-      <span className="italic mr-6 ml-2">Education</span>
+      <span className="ml-2 mr-6 italic">Education</span>
     </h1>
 
     <div className="flex flex-wrap">
