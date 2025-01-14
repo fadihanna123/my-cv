@@ -32,7 +32,7 @@ const Carousel: React.FC<{ images: string[] }> = ({
   }, [images.length]);
 
   return (
-    <div className="carouselContainer h-[500px] w-full max-w-[1200px] transition-transform	">
+    <div className="carouselContainer h-[500px] w-full max-w-[1200px] transition-transform">
       <div className="relative size-full">
         <Image
           alt="CarouselImage"
