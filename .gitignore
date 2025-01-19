@@ -11,9 +11,11 @@ dist
 
 # Next JS
 .next/
+next-env.d.ts
 
 # Build
 build
 tsconfig.tsbuildinfo
+
 # Local Netlify folder
 .netlify
