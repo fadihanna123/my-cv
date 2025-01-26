@@ -150,7 +150,7 @@ const projectData: projectData[] = [
     id: 7,
     title: "Camera Website",
     desc: undefined,
-    URL: undefined,
+    URL: "https://camerawebsite-client.netlify.app",
     GitURL: "https://github.com/fadihanna123/CameraWebsite/",
     assetPath: "/CameraWebsite.png",
   },

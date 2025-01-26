@@ -28,7 +28,7 @@ const ProjectsSection = () => (
                   {project.desc ? (
                     project.desc
                   ) : (
-                    <small className="italic">No description</small>
+                    <small className="italic">No description yet</small>
                   )}
                 </p>
               </div>
