@@ -7,11 +7,11 @@ const ProjectsSection = () => (
       <i className="fa-solid fa-briefcase mr-2"></i>
       <span className="ml-2 mr-9 italic">Projects</span>
     </h1>
-    <div className="flex flex-col flex-wrap overflow-hidden rounded shadow-lg sm:flex-row">
+    <div className="flex flex-col flex-wrap overflow-hidden rounded-sm shadow-lg sm:flex-row">
       {projectData.map((project) => {
         return (
           <div
-            className="mt-2 w-full rounded border p-2 text-center sm:w-1/2"
+            className="mt-2 w-full rounded-sm border p-2 text-center sm:w-1/2"
             key={project.id}
           >
             <Image

@@ -1,17 +1,15 @@
 import Image from "next/image";
 
 const PersonCardSection: React.FC = () => (
-  <div className="personCardSection flex w-full flex-col justify-around rounded border p-2 sm:flex-row">
-    <div>
-      <Image
-        className="animateIt relative h-[300px] max-w-full rounded-full border-solid border-black sm:w-[300px]"
-        src="/myProfilePic.JPG"
-        alt="myProfilePic"
-        width={300}
-        height={300}
-        priority
-      />
-    </div>
+  <div className="personCardSection flex w-full flex-col justify-around rounded-sm border p-2 sm:flex-row">
+    <Image
+      className="animateIt relative h-[300px] max-w-full rounded-full border-solid border-black sm:w-[300px] w-full"
+      src="/myProfilePic.JPG"
+      alt="myProfilePic"
+      width={300}
+      height={300}
+      priority
+    />
     <div className="mt-20">
       <h1 className="text-center text-6xl text-black">Fadi Hanna</h1>
       <h4 className="text-center text-2xl text-sky-600">
