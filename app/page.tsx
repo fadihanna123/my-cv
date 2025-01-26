@@ -10,7 +10,7 @@ import {
 import { Footer, Header } from "./inc";
 
 const Layout: React.FC = () => (
-  <div className="wrapper container m-0 overflow-auto border-0 bg-white p-0 text-lg font-bold text-black outline-0">
+  <div className="wrapper container m-0 overflow-auto border-0 p-0 text-lg font-bold text-black outline-0">
     <Header />
     <div>
       <div className="border-r-2 border-solid border-black p-2">

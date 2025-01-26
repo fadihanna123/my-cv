@@ -72,7 +72,6 @@
 
 .personCardSection {
   background-image: linear-gradient(43deg, #4158d0 50%, #fff 10%);
-  box-shadow: 12px 12px 2px 1px rgba(24, 24, 24, 65.9%);
   transition: all 0.3s;
 }
 
@@ -114,5 +113,30 @@
   .iconContainer > * {
     color: #fff;
     transition: all 0.3s;
+  }
+
+  .personCardSection {
+    box-shadow: 12px 12px 10px 10px rgba(24, 24, 24, 65.9%);
+  }
+}
+
+@media (width > 700px) {
+  .link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin: right center;
+  }
+
+  .link:hover::after {
+    transform: scaleX(1);
+    transition-duration: 0.4s;
+    transform-origin: right center;
   }
 }

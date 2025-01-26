@@ -9,6 +9,7 @@ const PersonCardSection: React.FC = () => (
         alt="myProfilePic"
         width={300}
         height={300}
+        priority
       />
     </div>
     <div className="mt-20">

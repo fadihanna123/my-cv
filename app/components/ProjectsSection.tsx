@@ -53,7 +53,7 @@ const ProjectsSection = () => (
       And many other in <br />
       <a
         target="_blank"
-        className="text-blue-500"
+        className="link sm:auto relative text-blue-500"
         href="https://github.com/fadihanna123?tab=repositories"
       >
         Github profile
