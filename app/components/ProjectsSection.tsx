@@ -22,7 +22,7 @@ const ProjectsSection = () => (
               height={500}
             />
             <div className="p-2 py-4">
-              <div className={`mb-2 h-[170px] text-xl font-bold`}>
+              <div className="mb-2 h-[170px] text-xl font-bold">
                 <h1> {project.title} </h1>
                 <p className="text-center text-[18px]">
                   {project.desc ? (

@@ -1,7 +1,7 @@
 {
   "name": "my-cv",
   "private": true,
-  "version": "0.0.20",
+  "version": "0.0.21",
   "type": "module",
   "scripts": {
     "setup": "yarn --silent --ignore-scripts --emoji --immutable",
@@ -32,8 +32,8 @@
     "@types/node": "22.10.10",
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
-    "@typescript-eslint/eslint-plugin": "8.21.0",
-    "@typescript-eslint/parser": "8.21.0",
+    "@typescript-eslint/eslint-plugin": "8.22.0",
+    "@typescript-eslint/parser": "8.22.0",
     "@vitejs/plugin-react": "4.3.4",
     "autoprefixer": "10.4.20",
     "eslint": "9.19.0",
@@ -47,11 +47,11 @@
     "next": "15.1.6",
     "postcss": "8.5.1",
     "prettier": "3.4.2",
-    "stylelint": "16.14.0",
+    "stylelint": "16.14.1",
     "stylelint-config-standard": "37.0.0",
     "tailwindcss": "4.0.0",
     "typescript": "5.7.3",
-    "typescript-eslint": "8.21.0",
+    "typescript-eslint": "8.22.0",
     "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.0.4"
   },
