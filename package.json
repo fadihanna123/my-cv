@@ -7,13 +7,13 @@
     "setup": "yarn --silent --ignore-scripts --emoji --immutable",
     "dev": "next dev --turbopack",
     "prebuild": "rimraf dist .next build",
-    "format": "prettier . -w",
     "build": "yarn prebuild && tsc && next build",
+    "format": "prettier . -w",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0 && stylelint **/*.css && yarn type-check",
     "test": "vitest",
-    "ci": "yarn build && yarn lint",
-    "clear": "rimraf node_modules dist",
-    "type-check": "tsc --noEmit && rimraf tsconfig.tsbuildinfo"
+    "type-check": "tsc --noEmit",
+    "ci": "yarn build && yarn lint && yarn test",
+    "clear": "rimraf node_modules build .next"
   },
   "dependencies": {
     "react": "19.0.0",
@@ -47,6 +47,7 @@
     "next": "15.1.6",
     "postcss": "8.5.1",
     "prettier": "3.4.2",
+    "rimraf": "^6.0.1",
     "stylelint": "16.14.1",
     "stylelint-config-standard": "37.0.0",
     "tailwindcss": "4.0.0",
