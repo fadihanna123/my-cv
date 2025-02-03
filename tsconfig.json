@@ -39,6 +39,11 @@
     "allowJs": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["**/*.ts", ".next/types/**/*.ts", "build/types/**/*.ts"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "build/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }

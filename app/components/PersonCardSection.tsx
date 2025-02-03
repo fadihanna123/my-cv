@@ -17,13 +17,6 @@ const PersonCardSection: React.FC = () => (
         Frontend developer{" "}
       </h4>
       <div className="text-center">
-        <a
-          href="https://www.linkedin.com/in/fadi-hanna-832514347"
-          target="_blank"
-        >
-          <i className="fa-brands fa-linkedin m-[20px] text-[40px] text-black hover:animate-bounce"></i>
-        </a>
-
         <a href="https://github.com/fadihanna123" target="_blank">
           <i className="fa-brands fa-github text-[40px] text-black hover:animate-bounce"></i>
         </a>

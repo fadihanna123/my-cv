@@ -31,6 +31,13 @@ declare global {
     icon: string;
   }
 
+  interface ContactForm {
+    contact_fullName: string;
+    contact_email: string;
+    contact_mobnr: string;
+    contact_msg: string;
+  }
+
   type ImagesKeys =
     | "myProfilePic"
     | "Pixabayfinder"

@@ -19,6 +19,12 @@ const Header: React.FC = () => (
           <span className="ml-2 mr-6 sm:mr-auto">Projects</span>
         </a>
       </li>
+      {/* <li className="m-4 block p-4 sm:inline">
+        <a href="#contact" className="link sm:auto relative">
+          <i className="fa-solid fa-envelope"></i>
+          <span className="ml-2">Contact</span>
+        </a>
+      </li> */}
     </ul>
   </nav>
 );
