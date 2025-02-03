@@ -18,6 +18,7 @@ const rootLayout: React.FC<{ children: React.ReactNode }> = ({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <link rel="shortcut icon" href="#" />
         <title> Fadi Hanna - CV </title>
       </head>
       <body>{children}</body>

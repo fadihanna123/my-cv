@@ -1,7 +1,7 @@
 {
   "name": "my-cv",
   "private": true,
-  "version": "0.0.22",
+  "version": "0.0.23",
   "type": "module",
   "scripts": {
     "setup": "yarn --silent --ignore-scripts --emoji --immutable",
@@ -32,8 +32,8 @@
     "@types/node": "22.13.0",
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
-    "@typescript-eslint/eslint-plugin": "8.22.0",
-    "@typescript-eslint/parser": "8.22.0",
+    "@typescript-eslint/eslint-plugin": "8.23.0",
+    "@typescript-eslint/parser": "8.23.0",
     "@vitejs/plugin-react": "4.3.4",
     "autoprefixer": "10.4.20",
     "eslint": "9.19.0",
@@ -52,9 +52,9 @@
     "stylelint-config-standard": "37.0.0",
     "tailwindcss": "4.0.3",
     "typescript": "5.7.3",
-    "typescript-eslint": "8.22.0",
+    "typescript-eslint": "8.23.0",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.0.4"
+    "vitest": "3.0.5"
   },
   "homepage": "https://fadihanna123.github.io/my-cv"
 }
