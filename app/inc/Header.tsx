@@ -21,8 +21,8 @@ const Header: React.FC = () => (
       </li>
       <li className="m-4 block p-4 sm:inline">
         <a href="#contact" className="link sm:auto relative">
-          <i className="fa-solid fa-envelope"></i>
-          <span className="ml-2">Contact</span>
+          <i className="fa-solid fa-envelope mr-5 sm:mr-2"></i>
+          <span className="ml-2 mr-6 sm:mr-auto">Contact</span>
         </a>
       </li>
     </ul>

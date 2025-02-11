@@ -111,7 +111,7 @@ const ContactSection: FC = () => {
           type="submit"
           value="Send"
         >
-          <i className="fa-solid fa-paper-plane"></i>
+          <i className="fa-solid fa-paper-plane mr-2"></i>
           Send
         </button>
       </form>
