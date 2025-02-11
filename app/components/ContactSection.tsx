@@ -1,12 +1,39 @@
+/* eslint-disable no-console */
 "use client";
 import React, { FC } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import { emailJSDetails } from "@app/utils/consts";
 
 const ContactSection: FC = () => {
   const { register, handleSubmit } = useForm<ContactForm>();
 
+  emailjs.init({
+    publicKey: emailJSDetails.publicKey,
+  });
+
   const onSubmit: SubmitHandler<ContactForm> = (data) => {
-    return data;
+    const templateParams: Record<keyof ContactForm, string> = {
+      contact_fullName: data.contact_fullName,
+      contact_email: data.contact_email,
+      contact_mobnr: data.contact_mobnr,
+      contact_msg: data.contact_msg,
+    };
+
+    emailjs
+      .send(
+        emailJSDetails.serviceId as string,
+        emailJSDetails.templateId as string,
+        templateParams,
+      )
+      .then(
+        () => {
+          return;
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        },
+      );
   };
 
   return (
@@ -15,7 +42,7 @@ const ContactSection: FC = () => {
         <i className="fa-solid fa-envelope"></i> Contact Me
       </h1>
       <form onSubmit={handleSubmit(onSubmit)} className="max-w-sm mx-auto">
-        <div className="mb-5">
+        <div className="mb-5 text-center">
           <label
             className="block text-gray-700 text-lg font-bold"
             htmlFor="contact_fullName"
@@ -31,15 +58,13 @@ const ContactSection: FC = () => {
             id="contact_fullName"
           />
         </div>
-        <div className="mb-5">
-          <div className="flex justify-center items-center">
-            <label
-              className="block text-gray-700 text-lg font-bold"
-              htmlFor="contact_email"
-            >
-              <i className="fa-solid fa-at"></i> Email:
-            </label>
-          </div>
+        <div className="mb-5 text-center">
+          <label
+            className="block text-gray-700 text-lg font-bold"
+            htmlFor="contact_email"
+          >
+            <i className="fa-solid fa-at mr-2"></i> Email:
+          </label>
           <input
             className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 text-gray-700 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
             type="email"
@@ -47,12 +72,11 @@ const ContactSection: FC = () => {
             required
             id="contact_email"
             placeholder="example@email.com"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           />
         </div>
-        <div className="mb-5">
+        <div className="mb-5 text-center">
           <label
-            className="block text-gray-700 text-lg font-bold"
+            className="block relative text-gray-700 text-lg font-bold"
             htmlFor="contact_mobnr"
           >
             <i className="fa-solid fa-mobile"></i> Mobil:
@@ -66,7 +90,7 @@ const ContactSection: FC = () => {
             placeholder="07X-XXXXXXX"
           />
         </div>
-        <div className="mb-5">
+        <div className="mb-5 text-center">
           <label
             className="block text-gray-700 text-lg font-bold"
             htmlFor="contact_msg"
@@ -87,7 +111,7 @@ const ContactSection: FC = () => {
           type="submit"
           value="Send"
         >
-          <i className="fa-solid fa-paper-plane mr-2"></i>
+          <i className="fa-solid fa-paper-plane"></i>
           Send
         </button>
       </form>

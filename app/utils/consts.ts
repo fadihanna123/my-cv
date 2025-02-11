@@ -243,4 +243,17 @@ const skills: skillsData[] = [
   },
 ];
 
-export { carouselImageCollection, eduData, expeData, projectData, skills };
+const emailJSDetails = {
+  serviceId: process.env.serviceId,
+  templateId: process.env.templateId,
+  publicKey: process.env.publicKey,
+};
+
+export {
+  carouselImageCollection,
+  eduData,
+  expeData,
+  projectData,
+  skills,
+  emailJSDetails,
+};

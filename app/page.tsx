@@ -1,6 +1,7 @@
 import React from "react";
 import "@styles/App.css";
 import {
+  ContactSection,
   EducationSection,
   ExperienceSection,
   PersonCardSection,
@@ -26,6 +27,7 @@ const Layout: React.FC = () => (
       <div id="projects">
         <ProjectsSection />
       </div>
+      <ContactSection />
     </div>
     <Footer />
   </div>

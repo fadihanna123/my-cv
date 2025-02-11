@@ -16,6 +16,7 @@
     "clear": "rimraf node_modules build .next"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "react": "19.0.0",
     "react-countup": "6.5.3",
     "react-dom": "19.0.0",

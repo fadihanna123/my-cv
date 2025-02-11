@@ -19,3 +19,7 @@ tsconfig.tsbuildinfo
 
 # Local Netlify folder
 .netlify
+
+# Environments variables
+.env
+.docker.env
