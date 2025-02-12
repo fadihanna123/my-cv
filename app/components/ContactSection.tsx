@@ -1,12 +1,15 @@
 /* eslint-disable no-console */
 "use client";
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { emailJSDetails } from "@app/utils/consts";
 
 const ContactSection: FC = () => {
   const { register, handleSubmit } = useForm<ContactForm>();
+  const [viewFormAlert, setViewFormAlert] = useState(false);
+  const [successAlertLoading, setSuccessAlertLoading] =
+    useState<boolean>(false);
 
   emailjs.init({
     publicKey: emailJSDetails.publicKey,
@@ -20,6 +23,9 @@ const ContactSection: FC = () => {
       contact_msg: data.contact_msg,
     };
 
+    setViewFormAlert(false);
+    setSuccessAlertLoading(true);
+
     emailjs
       .send(
         emailJSDetails.serviceId as string,
@@ -28,10 +34,12 @@ const ContactSection: FC = () => {
       )
       .then(
         () => {
-          return;
+          setViewFormAlert(true);
+          setSuccessAlertLoading(false);
         },
         (error) => {
           console.log("FAILED...", error);
+          setSuccessAlertLoading(false);
         },
       );
   };
@@ -42,6 +50,39 @@ const ContactSection: FC = () => {
         <i className="fa-solid fa-envelope"></i> Contact Me
       </h1>
       <form onSubmit={handleSubmit(onSubmit)} className="max-w-sm mx-auto">
+        {successAlertLoading && (
+          <div className="flex justify-center">
+            <div
+              className="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-15 py-3 shadow-md mb-2"
+              role="alert"
+            >
+              <div className="flex">
+                <div className="py-3 px-2">
+                  <i className="fa-solid fa-spinner animate-spin ml-2 mr-2 mx-1 fa-2xl"></i>
+                  <span className="font-bold">Sending ....</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        {viewFormAlert && (
+          <div className="flex justify-center">
+            <div
+              className="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-3 py-3 shadow-md mb-2"
+              role="alert"
+            >
+              <div className="flex">
+                <div className="py-3">
+                  <i className="fa-solid fa-square-check text-teal-500 mr-2 mx-1 fa-2xl"></i>
+                </div>
+                <div>
+                  <p className="font-bold">Thanks for your message</p>
+                  <p className="text-sm">We will reach back soon. 😊</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
         <div className="mb-5 text-center">
           <label
             className="block text-gray-700 text-lg font-bold"
@@ -51,7 +92,7 @@ const ContactSection: FC = () => {
             Fullname:
           </label>
           <input
-            className="border shadow appearance-none rounded py-2 px-3 text-gray-700 leading-tight focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
+            className="border shadow appearance-none rounded py-2 px-3 leading-tight focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
             type="text"
             {...register("contact_fullName")}
             required
@@ -66,7 +107,7 @@ const ContactSection: FC = () => {
             <i className="fa-solid fa-at mr-2"></i> Email:
           </label>
           <input
-            className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 text-gray-700 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
+            className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
             type="email"
             {...register("contact_email")}
             required
@@ -79,10 +120,10 @@ const ContactSection: FC = () => {
             className="block relative text-gray-700 text-lg font-bold"
             htmlFor="contact_mobnr"
           >
-            <i className="fa-solid fa-mobile"></i> Mobil:
+            <i className="fa-solid fa-mobile"></i> Mobile:
           </label>
           <input
-            className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 text-gray-700 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
+            className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
             type="text"
             {...register("contact_mobnr")}
             id="contact_mobnr"
@@ -100,7 +141,7 @@ const ContactSection: FC = () => {
           <textarea
             rows={4}
             cols={22}
-            className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 text-gray-700 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
+            className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
             {...register("contact_msg")}
             required
             placeholder="Your message..."
