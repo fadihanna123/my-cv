@@ -1,5 +1,5 @@
 const Header: React.FC = () => (
-  <nav className="mb-10 mt-2 text-center text-2xl sm:text-right sm:text-lg">
+  <nav className="mb-10 mt-2 text-center text-2xl md:text-right md:text-lg menuContainer">
     <ul>
       <li className="m-4 block p-4 sm:inline">
         <a href="#education" className="link sm:auto relative">
@@ -15,14 +15,14 @@ const Header: React.FC = () => (
       </li>
       <li className="m-4 block p-4 sm:inline">
         <a href="#projects" className="link sm:auto relative">
-          <i className="fa-solid fa-briefcase mr-5 sm:mr-2"></i>
-          <span className="ml-2 mr-6 sm:mr-auto">Projects</span>
+          <i className="fa-solid fa-briefcase mr-5 md:mr-2"></i>
+          <span className="ml-2 mr-6 md:mr-auto">Projects</span>
         </a>
       </li>
       <li className="m-4 block p-4 sm:inline">
         <a href="#contact" className="link sm:auto relative">
           <i className="fa-solid fa-envelope mr-5 sm:mr-2"></i>
-          <span className="ml-2 mr-6 sm:mr-auto">Contact</span>
+          <span className="ml-2 mr-6 md:mr-auto">Contact</span>
         </a>
       </li>
     </ul>

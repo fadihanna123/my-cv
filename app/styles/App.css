@@ -4,6 +4,13 @@
   }
 }
 
+@media (width >= 640px) and (width < 740px) {
+  .menuContainer ul li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @keyframes textGlow {
   0% {
     text-shadow:

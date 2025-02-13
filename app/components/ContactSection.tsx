@@ -120,7 +120,7 @@ const ContactSection: FC = () => {
             className="block relative text-gray-700 text-lg font-bold"
             htmlFor="contact_mobnr"
           >
-            <i className="fa-solid fa-mobile"></i> Mobile:
+            <i className="fa-solid fa-mobile mr-2"></i> Mobile:
           </label>
           <input
             className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
@@ -136,12 +136,12 @@ const ContactSection: FC = () => {
             className="block text-gray-700 text-lg font-bold"
             htmlFor="contact_msg"
           >
-            <i className="fa-solid fa-comment"></i> Message:
+            <i className="fa-solid fa-comment mr-2"></i> Message:
           </label>
           <textarea
             rows={4}
             cols={22}
-            className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
+            className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 sm:px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
             {...register("contact_msg")}
             required
             placeholder="Your message..."
