@@ -158,7 +158,7 @@ const projectData: projectData[] = [
     id: 8,
     title: "My CV (current)",
     desc: "🧑‍💼My CV is my portfolio website to show my experiences, projects and education.",
-    URL: "https://fadihanna123.github.io/my-cv",
+    URL: "https://my-cv123.netlify.app",
     GitURL: "https://github.com/fadihanna123/my-cv",
     assetPath: "/my_cv.png",
   },
