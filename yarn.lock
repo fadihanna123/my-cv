@@ -647,6 +647,13 @@
   dependencies:
     fast-glob "3.3.1"
 
+"@next/eslint-plugin-next@15.2.2":
+  version "15.2.2"
+  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-15.2.2.tgz#55fa96486f9e163ca689d441d31f4431ef423aef"
+  integrity sha512-1+BzokFuFQIfLaRxUKf2u5In4xhPV7tUgKcK53ywvFl6+LXHWHpFkcV7VNeKlyQKUotwiq4fy/aDNF9EiUp4RQ==
+  dependencies:
+    fast-glob "3.3.1"
+
 "@next/swc-darwin-arm64@15.2.1":
   version "15.2.1"
   resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-15.2.1.tgz#bfca841bb7cfbb9f9e05f63ffe3e574ac6679308"
@@ -2017,12 +2024,12 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-next@15.2.1:
-  version "15.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-15.2.1.tgz#f49f71eb5de2e8a794cf79cb54b02f1e209d4d7f"
-  integrity sha512-mhsprz7l0no8X+PdDnVHF4dZKu9YBJp2Rf6ztWbXBLJ4h6gxmW//owbbGJMBVUU+PibGJDAqZhW4pt8SC8HSow==
+eslint-config-next@15.2.2:
+  version "15.2.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-15.2.2.tgz#114ffec6851ced10fde7aa2f62c3d3a4371df514"
+  integrity sha512-g34RI7RFS4HybYFwGa/okj+8WZM+/fy+pEM+aqRQoVvM4gQhKrd4wIEddKmlZfWD75j8LTwB5zwkmNv3DceH1A==
   dependencies:
-    "@next/eslint-plugin-next" "15.2.1"
+    "@next/eslint-plugin-next" "15.2.2"
     "@rushstack/eslint-patch" "^1.10.3"
     "@typescript-eslint/eslint-plugin" "^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0"
     "@typescript-eslint/parser" "^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0"
@@ -2109,15 +2116,10 @@ eslint-plugin-jsx-a11y@^6.10.0:
     safe-regex-test "^1.0.3"
     string.prototype.includes "^2.0.1"
 
-eslint-plugin-react-hooks@5.2.0:
+eslint-plugin-react-hooks@5.2.0, eslint-plugin-react-hooks@^5.0.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.2.0.tgz#1be0080901e6ac31ce7971beed3d3ec0a423d9e3"
   integrity sha512-+f15FfK64YQwZdJNELETdn5ibXEUQmW1DZL6KXhNnc2heoy/sg9VJJeT7n8TlMWouzWqSWavFkIhHyIbIAEapg==
-
-eslint-plugin-react-hooks@^5.0.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.1.0.tgz#3d34e37d5770866c34b87d5b499f5f0b53bf0854"
-  integrity sha512-mpJRtPgHN2tNAvZ35AMfqeB3Xqeo273QxrHJsbBEPWODRM4r0yB6jfoROqKEYrOn27UtRPpcpHc2UqyBSuUNTw==
 
 eslint-plugin-react-refresh@0.4.19:
   version "0.4.19"
