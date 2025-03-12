@@ -1,8 +1,10 @@
 {
   "name": "my-cv",
   "private": true,
-  "version": "0.0.28",
+  "version": "0.0.29",
+  "lastUpgrade": "20250312",
   "type": "module",
+  "homepage": "https://my-cv123.netlify.app",
   "scripts": {
     "setup": "yarn --silent --ignore-scripts --emoji --immutable",
     "dev": "next dev --turbopack",
@@ -45,17 +47,16 @@
     "eslint-plugin-react-refresh": "0.4.19",
     "globals": "16.0.0",
     "jsdom": "26.0.0",
-    "next": "15.2.1",
+    "next": "15.2.2",
     "postcss": "8.5.3",
     "prettier": "3.5.3",
     "rimraf": "6.0.1",
     "stylelint": "16.15.0",
     "stylelint-config-standard": "37.0.0",
-    "tailwindcss": "4.0.12",
+    "tailwindcss": "4.0.13",
     "typescript": "5.8.2",
     "typescript-eslint": "8.26.1",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.0.7"
-  },
-  "homepage": "https://fadihanna123.github.io/my-cv"
+    "vitest": "3.0.8"
+  }
 }

@@ -15,7 +15,7 @@ const ProjectsSection = () => (
             key={project.id}
           >
             <Image
-              className="h-[500px] w-full object-contain p-2"
+              className="h-[200px] w-full object-contain p-2 sm:h-[200px]"
               src={project.assetPath}
               alt={project.assetPath}
               width={0}
