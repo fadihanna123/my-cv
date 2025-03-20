@@ -55,7 +55,7 @@
     "stylelint-config-standard": "37.0.0",
     "tailwindcss": "4.0.13",
     "typescript": "5.8.2",
-    "typescript-eslint": "8.26.1",
+    "typescript-eslint": "8.27.0",
     "vite-tsconfig-paths": "5.1.4",
     "vitest": "3.0.8"
   }
