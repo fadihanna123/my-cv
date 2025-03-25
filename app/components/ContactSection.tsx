@@ -140,7 +140,7 @@ const ContactSection: FC = () => {
           </label>
           <textarea
             rows={4}
-            cols={22}
+            cols={19}
             className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 sm:px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
             {...register("contact_msg")}
             id="contact_msg"

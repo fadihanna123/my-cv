@@ -21,6 +21,11 @@ const SkillsSection = () => (
         );
       })}
       <br />
+      <div className="text-2xl mt-9">
+        <br />
+        <br /> and many more...
+      </div>
+      <br />
     </section>
   </div>
 );
