@@ -1,8 +1,8 @@
 {
   "name": "my-cv",
   "private": true,
-  "version": "0.0.29",
-  "lastUpgrade": "20250312",
+  "version": "0.0.30",
+  "lastUpgrade": "20250401",
   "type": "module",
   "homepage": "https://my-cv123.netlify.app",
   "scripts": {
@@ -19,24 +19,24 @@
   },
   "dependencies": {
     "@emailjs/browser": "4.4.1",
-    "react": "19.0.0",
+    "react": "19.1.0",
     "react-countup": "6.5.3",
-    "react-dom": "19.0.0",
-    "react-hook-form": "7.54.2"
+    "react-dom": "19.1.0",
+    "react-hook-form": "7.55.0"
   },
   "devDependencies": {
-    "@eslint/compat": "1.2.7",
+    "@eslint/compat": "1.2.8",
     "@eslint/eslintrc": "3.3.1",
     "@eslint/js": "9.23.0",
     "@next/eslint-plugin-next": "15.2.4",
-    "@tailwindcss/postcss": "4.0.17",
+    "@tailwindcss/postcss": "4.1.0",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.2.0",
-    "@types/node": "22.13.15",
+    "@types/node": "22.13.17",
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4",
-    "@typescript-eslint/eslint-plugin": "8.28.0",
+    "@typescript-eslint/eslint-plugin": "8.29.0",
     "@typescript-eslint/parser": "8.29.0",
     "@vitejs/plugin-react": "4.3.4",
     "autoprefixer": "10.4.21",
@@ -53,10 +53,10 @@
     "rimraf": "6.0.1",
     "stylelint": "16.17.0",
     "stylelint-config-standard": "37.0.0",
-    "tailwindcss": "4.0.17",
+    "tailwindcss": "4.1.0",
     "typescript": "5.8.2",
     "typescript-eslint": "8.29.0",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.0.9"
+    "vitest": "3.1.1"
   }
 }

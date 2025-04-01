@@ -11,46 +11,6 @@
   }
 }
 
-@keyframes textGlow {
-  0% {
-    text-shadow:
-      0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 15px #f0f,
-      0 0 20px #f0f,
-      0 0 25px #f0f,
-      0 0 30px #f0f,
-      0 0 35px #f0f;
-  }
-
-  50% {
-    text-shadow:
-      0 0 10px #ff0,
-      0 0 20px #ff0,
-      0 0 30px #ff0,
-      0 0 40px #ff0,
-      0 0 50px #ff0,
-      0 0 60px #ff0,
-      0 0 70px #ff0;
-  }
-
-  100% {
-    text-shadow:
-      0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 15px #f0f,
-      0 0 20px #f0f,
-      0 0 25px #f0f,
-      0 0 30px #f0f,
-      0 0 35px #f0f;
-  }
-}
-
-.animate-text-glow {
-  animation: textGlow 1.5s;
-  animation-iteration-count: 2;
-}
-
 .carouselContainer {
   margin: 0 auto;
   aspect-ratio: 10 / 6;

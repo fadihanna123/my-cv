@@ -26,9 +26,8 @@ declare global {
   }
 
   interface skillsData {
-    id: number;
     value: string;
-    icon: string;
+    assetURL?: string;
   }
 
   interface ContactForm {

@@ -182,64 +182,165 @@ const projectData: projectData[] = [
 
 const skills: skillsData[] = [
   {
-    id: 1,
     value: "ReactJS",
-    icon: "react",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
-    id: 2,
-    value: "Angular",
-    icon: "angular",
+    value: "Redux",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
   },
   {
-    id: 3,
     value: "Javascript",
-    icon: "js",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
-    id: 4,
+    value: "Webpack",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
+  },
+  {
+    value: "Jest",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+  },
+  {
     value: "PHP",
-    icon: "php",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
   },
   {
-    id: 5,
+    value: "Azure",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+  },
+  {
     value: "Wordpress",
-    icon: "wordpress",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
   },
   {
-    id: 6,
+    value: "Typescript",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+  {
     value: "NodeJS",
-    icon: "node",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
   {
-    id: 7,
     value: "NPM",
-    icon: "npm",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
   },
   {
-    id: 8,
-    value: "HTML 5",
-    icon: "html5",
+    value: "Material UI",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
   },
   {
-    id: 9,
+    value: "Visual Studio",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg",
+  },
+  {
+    value: "Visual Studio Code",
+    assetURL: "https://skillicons.dev/icons?i=vscode",
+  },
+  {
+    value: "PostgreSQL",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    value: "Ionic",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg",
+  },
+  {
+    value: "EmotionJS",
+    assetURL: "https://skillicons.dev/icons?i=emotion",
+  },
+  {
+    value: "Eslint",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg",
+  },
+  {
+    value: "MySQL",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
+  {
+    value: "MongoDB",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    value: "HTML",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  {
     value: "CSS",
-    icon: "css3",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
   },
   {
-    id: 10,
+    value: "C#",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+  },
+  {
+    value: "Sass",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+  },
+  {
+    value: "Bulma CSS",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bulma/bulma-plain.svg",
+  },
+  {
     value: "Bootstrap",
-    icon: "bootstrap",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
   },
   {
-    id: 11,
+    value: "PugJS",
+    assetURL: "https://skillicons.dev/icons?i=pug",
+  },
+  {
     value: "Git",
-    icon: "git",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
   {
-    id: 12,
+    value: "jQuery",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
+  },
+  {
+    value: "Adobe Photoshop",
+    assetURL: "https://skillicons.dev/icons?i=ps",
+  },
+  {
+    value: "Adobe XD",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg",
+  },
+  {
+    value: "Heroku",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg",
+  },
+  {
     value: "Gulp",
-    icon: "gulp",
+    assetURL:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg",
   },
 ];
 

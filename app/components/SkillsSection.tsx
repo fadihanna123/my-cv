@@ -6,26 +6,14 @@ const SkillsSection = () => (
       <span className="mr-6 text-4xl sm:mr-2">🧑‍💻</span>
       <span className="mr-[80px] italic sm:ml-2 sm:mr-6">Skills</span>
     </h1>
-    <section className="m-2 flex flex-wrap text-lg">
-      {skills.map((skill) => {
+    <section className="m-2 flex flex-wrap">
+      {skills.map((skill, i: number) => {
         return (
-          <span
-            key={skill.id}
-            className="animate-text-glow m-8 w-[10%] p-2 sm:m-2"
-          >
-            <i
-              className={`fa-brands fa-${skill.icon} text-[60px]`}
-              title={skill.value}
-            ></i>
+          <span key={i} className="m-8 w-[39%] sm:w-[8%] p-2 sm:m-4">
+            <img className="w-[60px]" src={skill.assetURL} alt={skill.value} />
           </span>
         );
       })}
-      <br />
-      <div className="text-2xl mt-9">
-        <br />
-        <br /> and many more...
-      </div>
-      <br />
     </section>
   </div>
 );
