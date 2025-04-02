@@ -28,3 +28,4 @@ const PersonCardSection: React.FC = () => (
 );
 
 export default PersonCardSection;
+
