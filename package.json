@@ -47,7 +47,7 @@
     "eslint-plugin-react-refresh": "0.4.19",
     "globals": "16.0.0",
     "jsdom": "26.0.0",
-    "next": "15.2.4",
+    "next": "15.2.5",
     "postcss": "8.5.3",
     "prettier": "3.5.3",
     "rimraf": "6.0.1",
