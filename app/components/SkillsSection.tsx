@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { skills } from "@utils/consts";
 
 const SkillsSection = () => (
@@ -10,7 +11,12 @@ const SkillsSection = () => (
       {skills.map((skill, i: number) => {
         return (
           <span key={i} className="m-4 w-[8%] p-2 sm:m-4 skillsImgContainer">
-            <img className="w-[60px]" src={skill.assetURL} alt={skill.value} />
+            <Image
+              src={skill.assetURL!}
+              alt={skill.value}
+              width={60}
+              height={60}
+            />
           </span>
         );
       })}
