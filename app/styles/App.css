@@ -107,3 +107,9 @@
     transform-origin: right center;
   }
 }
+
+@media (max-width: 600px) {
+  .skillsImgContainer {
+    width: auto;
+  }
+}

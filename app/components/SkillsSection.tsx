@@ -9,7 +9,7 @@ const SkillsSection = () => (
     <section className="m-2 flex flex-wrap">
       {skills.map((skill, i: number) => {
         return (
-          <span key={i} className="m-4 w-[39%] sm:w-[8%] p-2 sm:m-4">
+          <span key={i} className="m-4 w-[8%] p-2 sm:m-4 skillsImgContainer">
             <img className="w-[60px]" src={skill.assetURL} alt={skill.value} />
           </span>
         );
