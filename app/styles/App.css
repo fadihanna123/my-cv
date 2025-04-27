@@ -11,11 +11,11 @@
 .carouselBtn {
   transition: background-color 100ms ease-in-out;
   transition: all 0.3s;
-}
 
-.carouselBtn:hover {
-  background-color: rgb(0, 0, 0, 20%);
-  transition: all 0.3s;
+  &:hover {
+    background-color: rgb(0, 0, 0, 20%);
+    transition: all 0.3s;
+  }
 }
 
 .personCardSection {
@@ -62,11 +62,11 @@
   .iconContainer {
     background-color: #000;
     transition: all 0.3s;
-  }
 
-  .iconContainer > * {
-    color: #fff;
-    transition: all 0.3s;
+    & > * {
+      color: #fff;
+      transition: all 0.3s;
+    }
   }
 
   .personCardSection {

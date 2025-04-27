@@ -1,3 +1,4 @@
+import { frontendDeveloper, myFullName } from "@app/utils/consts";
 import Image from "next/image";
 
 const PersonCardSection: React.FC = () => (
@@ -11,10 +12,10 @@ const PersonCardSection: React.FC = () => (
       priority
     />
     <div className="mt-20">
-      <h1 className="text-center text-6xl text-black">Fadi Hanna</h1>
+      <h1 className="text-center text-6xl text-black">{myFullName}</h1>
       <h4 className="text-center text-2xl text-sky-600">
         {" "}
-        Frontend developer{" "}
+        {frontendDeveloper}{" "}
       </h4>
       <div className="text-center">
         <a href="https://github.com/fadihanna123" target="_blank">

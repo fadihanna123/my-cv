@@ -25,6 +25,8 @@
       "@app/*": ["app/*"],
       "@assets/*": ["app/assets/*"],
       "@components/*": ["app/components/*"],
+      "@containers/*": ["app/containers/*"],
+      "@functions/*": ["app/functions/*"],
       "@utils/*": ["app/utils/*"],
       "@styles/*": ["app/styles/*"],
       "@tests/*": ["app/tests/*"]

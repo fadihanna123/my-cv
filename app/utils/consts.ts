@@ -1,4 +1,28 @@
-const carouselImageCollection = [
+export const cv = "CV";
+export const contactMe = "Contact Me";
+export const sending = "Sending ....";
+export const thanksForMsg_Text = "Thanks for your message";
+export const weWillReachBack_Text = "We will reach back soon. 😊";
+export const fullName = "Fullname";
+export const email = "Email";
+export const mobile = "Mobile";
+export const message = "Message";
+export const send = "Send";
+export const educationSection = "Education";
+export const experienceSection = "Experience";
+export const projectsSection = "Projects";
+export const skillsSection = "Skills";
+export const aboutMe = "About Me";
+export const contactSection = "Contact";
+export const years = "years";
+export const myFullName = "Fadi Hanna";
+export const frontendDeveloper = "Frontend developer";
+export const noDescription = "No description yet";
+export const manyOther = "And many other in";
+export const githubProfile = "Github profile";
+export const downloadCV = "Download My CV (291 kb)";
+
+export const carouselImageCollection = [
   "/Pixabayfinder.png",
   "/CV_React.png",
   "/CameraWebsite.png",
@@ -11,7 +35,7 @@ const carouselImageCollection = [
   "/E-handelproject.png",
 ];
 
-const expeData: expeEduData[] = [
+export const expeData: expeEduData[] = [
   {
     id: 1,
     title: "Fullstack developer – Internship",
@@ -78,7 +102,7 @@ const expeData: expeEduData[] = [
   },
 ];
 
-const eduData: expeEduData[] = [
+export const eduData: expeEduData[] = [
   {
     id: 1,
     title: "High Education Diploma with specialization in Computer Engineering",
@@ -97,7 +121,7 @@ const eduData: expeEduData[] = [
   },
 ];
 
-const projectData: projectData[] = [
+export const projectData: projectData[] = [
   {
     id: 1,
     title: "PixabayFinder",
@@ -180,7 +204,7 @@ const projectData: projectData[] = [
   },
 ];
 
-const skills: skillsData[] = [
+export const skills: skillsData[] = [
   {
     value: "ReactJS",
     assetURL:
@@ -349,17 +373,8 @@ const skills: skillsData[] = [
   },
 ];
 
-const emailJSDetails = {
+export const emailJSDetails = {
   serviceId: process.env.serviceId,
   templateId: process.env.templateId,
   publicKey: process.env.publicKey,
-};
-
-export {
-  carouselImageCollection,
-  eduData,
-  expeData,
-  projectData,
-  skills,
-  emailJSDetails,
 };

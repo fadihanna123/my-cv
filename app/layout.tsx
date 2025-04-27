@@ -1,7 +1,13 @@
 import React from "react";
+import emailjs from "@emailjs/browser";
 
 // Components
 import "@styles/index.css";
+import { emailJSDetails } from "@utils/consts";
+
+emailjs.init({
+  publicKey: emailJSDetails.publicKey,
+});
 
 const rootLayout: React.FC<{ children: React.ReactNode }> = ({
   children,

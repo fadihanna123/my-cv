@@ -1,5 +1,5 @@
 "use client";
-import { expeData } from "@utils/consts";
+import { expeData, experienceSection, years } from "@utils/consts";
 import TxtSection from "../ui/TxtSection";
 import CountUp from "react-countup";
 
@@ -8,7 +8,7 @@ const ExperienceSection: React.FC = () => {
     <div className="text-xl">
       <h1 className="my-4 text-center text-3xl">
         <span className="mr-6 text-4xl sm:mr-2">🧑‍💻</span>
-        <span className="italic sm:ml-2 sm:mr-6">Experience</span>
+        <span className="italic sm:ml-2 sm:mr-6">{experienceSection}</span>
         <br />
         <br />
         <div className="ml-5 flex items-center justify-center sm:ml-auto sm:mr-14">
@@ -21,7 +21,7 @@ const ExperienceSection: React.FC = () => {
               decimals={1}
               className="text-4xl"
             />{" "}
-            <span className="text-xl">years</span>
+            <span className="text-xl">{years}</span>
           </span>
         </div>
       </h1>

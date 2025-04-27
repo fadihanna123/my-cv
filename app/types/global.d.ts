@@ -51,6 +51,11 @@ declare global {
     | "ChatApp2";
 
   declare module "*.JPG";
+
+  interface onSubmitProps {
+    setViewFormAlert: (viewFormAlert: boolean) => void;
+    setSuccessAlertLoading: (successAlertLoading: boolean) => void;
+  }
 }
 
 export {};

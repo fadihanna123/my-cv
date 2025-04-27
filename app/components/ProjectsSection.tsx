@@ -1,11 +1,17 @@
-import { projectData } from "@utils/consts";
+import {
+  githubProfile,
+  manyOther,
+  noDescription,
+  projectData,
+  projectsSection,
+} from "@utils/consts";
 import Image from "next/image";
 
 const ProjectsSection = () => (
   <>
     <h1 className="my-4 text-center text-3xl shadow-md">
       <i className="fa-solid fa-briefcase mr-2"></i>
-      <span className="ml-2 mr-9 italic">Projects</span>
+      <span className="ml-2 mr-9 italic">{projectsSection}</span>
     </h1>
     <div className="flex flex-col flex-wrap overflow-hidden rounded-sm shadow-lg sm:flex-row">
       {projectData.map((project) => {
@@ -28,7 +34,7 @@ const ProjectsSection = () => (
                   {project.desc ? (
                     project.desc
                   ) : (
-                    <small className="italic">No description yet</small>
+                    <small className="italic">{noDescription}</small>
                   )}
                 </p>
               </div>
@@ -50,13 +56,13 @@ const ProjectsSection = () => (
       })}
     </div>
     <div className="text-center text-xl">
-      And many other in <br />
+      {manyOther} <br />
       <a
         target="_blank"
         className="link sm:auto relative text-blue-500"
         href="https://github.com/fadihanna123?tab=repositories"
       >
-        Github profile
+        {githubProfile}
       </a>
       ...
     </div>

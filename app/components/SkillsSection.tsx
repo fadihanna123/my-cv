@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { skills } from "@utils/consts";
+import { skills, skillsSection } from "@utils/consts";
 
 const SkillsSection = () => (
   <div className="text-center">
     <h1 className="my-4 text-3xl">
       <span className="mr-6 text-4xl sm:mr-2">🧑‍💻</span>
-      <span className="mr-[80px] italic sm:ml-2 sm:mr-6">Skills</span>
+      <span className="mr-[80px] italic sm:ml-2 sm:mr-6">{skillsSection}</span>
     </h1>
     <section className="m-2 flex flex-wrap">
       {skills.map((skill, i: number) => {

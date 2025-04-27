@@ -1,9 +1,18 @@
-/* eslint-disable no-console */
 "use client";
 import React, { FC, useState } from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
-import emailjs from "@emailjs/browser";
-import { emailJSDetails } from "@app/utils/consts";
+import { useForm } from "react-hook-form";
+import {
+  contactMe,
+  email,
+  fullName,
+  message,
+  mobile,
+  send,
+  sending,
+  thanksForMsg_Text,
+  weWillReachBack_Text,
+} from "@utils/consts";
+import { onSubmit } from "@functions/helper";
 
 const ContactSection: FC = () => {
   const { register, handleSubmit } = useForm<ContactForm>();
@@ -11,45 +20,17 @@ const ContactSection: FC = () => {
   const [successAlertLoading, setSuccessAlertLoading] =
     useState<boolean>(false);
 
-  emailjs.init({
-    publicKey: emailJSDetails.publicKey,
-  });
-
-  const onSubmit: SubmitHandler<ContactForm> = (data) => {
-    const templateParams: Record<keyof ContactForm, string> = {
-      contact_fullName: data.contact_fullName,
-      contact_email: data.contact_email,
-      contact_mobnr: data.contact_mobnr,
-      contact_msg: data.contact_msg,
-    };
-
-    setViewFormAlert(false);
-    setSuccessAlertLoading(true);
-
-    emailjs
-      .send(
-        emailJSDetails.serviceId as string,
-        emailJSDetails.templateId as string,
-        templateParams,
-      )
-      .then(
-        () => {
-          setViewFormAlert(true);
-          setSuccessAlertLoading(false);
-        },
-        (error) => {
-          console.log("FAILED...", error);
-          setSuccessAlertLoading(false);
-        },
-      );
-  };
-
   return (
     <div className="text-center mt-15" id="contact">
       <h1 className="italic text-4xl mb-3">
-        <i className="fa-solid fa-envelope"></i> Contact Me
+        <i className="fa-solid fa-envelope"></i> {contactMe}
       </h1>
-      <form onSubmit={handleSubmit(onSubmit)} className="max-w-sm mx-auto">
+      <form
+        onSubmit={handleSubmit((data) =>
+          onSubmit(data, { setViewFormAlert, setSuccessAlertLoading }),
+        )}
+        className="max-w-sm mx-auto"
+      >
         {successAlertLoading && (
           <div className="flex justify-center">
             <div
@@ -59,7 +40,7 @@ const ContactSection: FC = () => {
               <div className="flex">
                 <div className="py-3 px-2">
                   <i className="fa-solid fa-spinner animate-spin ml-2 mr-2 mx-1 fa-2xl"></i>
-                  <span className="font-bold">Sending ....</span>
+                  <span className="font-bold">{sending}</span>
                 </div>
               </div>
             </div>
@@ -76,8 +57,8 @@ const ContactSection: FC = () => {
                   <i className="fa-solid fa-square-check text-teal-500 mr-2 mx-1 fa-2xl"></i>
                 </div>
                 <div>
-                  <p className="font-bold">Thanks for your message</p>
-                  <p className="text-sm">We will reach back soon. 😊</p>
+                  <p className="font-bold">{thanksForMsg_Text}</p>
+                  <p className="text-sm">{weWillReachBack_Text} 😊</p>
                 </div>
               </div>
             </div>
@@ -89,7 +70,7 @@ const ContactSection: FC = () => {
             htmlFor="contact_fullName"
           >
             <i className="fa-solid fa-user mr-2"></i>
-            Fullname:
+            {fullName}:
           </label>
           <input
             className="border shadow appearance-none rounded py-2 px-3 leading-tight focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
@@ -104,7 +85,7 @@ const ContactSection: FC = () => {
             className="block text-gray-700 text-lg font-bold"
             htmlFor="contact_email"
           >
-            <i className="fa-solid fa-at mr-2"></i> Email:
+            <i className="fa-solid fa-at mr-2"></i> {email}:
           </label>
           <input
             className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
@@ -120,7 +101,7 @@ const ContactSection: FC = () => {
             className="block relative text-gray-700 text-lg font-bold"
             htmlFor="contact_mobnr"
           >
-            <i className="fa-solid fa-mobile mr-2"></i> Mobile:
+            <i className="fa-solid fa-mobile mr-2"></i> {mobile}:
           </label>
           <input
             className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
@@ -136,7 +117,7 @@ const ContactSection: FC = () => {
             className="block text-gray-700 text-lg font-bold"
             htmlFor="contact_msg"
           >
-            <i className="fa-solid fa-comment mr-2"></i> Message:
+            <i className="fa-solid fa-comment mr-2"></i> {message}:
           </label>
           <textarea
             rows={4}
@@ -154,7 +135,7 @@ const ContactSection: FC = () => {
           value="Send"
         >
           <i className="fa-solid fa-paper-plane mr-2"></i>
-          Send
+          {send}
         </button>
       </form>
     </div>
