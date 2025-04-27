@@ -1,8 +1,8 @@
 {
   "name": "my-cv",
   "private": true,
-  "version": "0.0.34",
-  "lastUpgrade": "20250422",
+  "version": "0.0.35",
+  "lastUpgrade": "20250427",
   "type": "module",
   "homepage": "https://my-cv123.netlify.app",
   "scripts": {
@@ -22,7 +22,7 @@
     "react": "19.1.0",
     "react-countup": "6.5.3",
     "react-dom": "19.1.0",
-    "react-hook-form": "7.56.0"
+    "react-hook-form": "7.56.1"
   },
   "devDependencies": {
     "@eslint/compat": "1.2.8",
@@ -33,7 +33,7 @@
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.3.0",
-    "@types/node": "22.14.1",
+    "@types/node": "22.15.2",
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
     "@typescript-eslint/eslint-plugin": "8.31.0",
@@ -51,7 +51,7 @@
     "postcss": "8.5.3",
     "prettier": "3.5.3",
     "rimraf": "6.0.1",
-    "stylelint": "16.18.0",
+    "stylelint": "16.19.1",
     "stylelint-config-standard": "38.0.0",
     "tailwindcss": "4.1.4",
     "typescript": "5.8.3",
