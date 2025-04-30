@@ -1,46 +1,113 @@
 # My CV
 
-> My CV is my portfolio website to show my experiences, projects and education.
+A modern, responsive CV/portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
-## [Website](https://my-cv123.netlify.app)
+## 🚀 Features
 
+- Modern and responsive design
+- Built with Next.js 15 and React 19
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Email contact form integration
+- Docker support for containerization
+- Comprehensive testing setup with Vitest
+- ESLint and Stylelint for code quality
+- Prettier for code formatting
 
-## 🚀 Quick Start
+## 🛠️ Tech Stack
 
-```sh
-# Clone the project
-git clone https://github.com/fadihanna123/my-cv.git
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Testing**: Vitest, Testing Library
+- **Form Handling**: React Hook Form
+- **Email**: EmailJS
+- **Containerization**: Docker
+
+## 📦 Prerequisites
+
+- Node.js (LTS version recommended)
+- Yarn package manager
+- Docker (optional)
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/fadihanna123/my-cv
+   cd my-cv
+   ```
+
+2. **Install dependencies**
+   ```bash
+   yarn setup
+   ```
+
+3. **Development**
+   ```bash
+   yarn dev
+   ```
+   The application will be available at `http://localhost:3000`
+
+4. **Build for production**
+   ```bash
+   yarn build
+   ```
+
+5. **Preview production build**
+   ```bash
+   yarn preview
+   ```
+
+## 🐳 Docker Support
+
+The project includes Docker configuration for easy deployment:
+
+```bash
+# Build the Docker image
+docker-compose build
+
+# Run the container
+docker-compose up
 ```
 
-```sh
-# Go to the directory
-cd my-cv
-```
+## 🧪 Testing
 
-```sh
-# Install dependencies
-yarn setup
-```
-
-```sh
-# Start the server
-yarn dev
-# Go to http://localhost:3000
-```
-
-```sh
-# Testing
+Run tests using:
+```bash
 yarn test
 ```
 
+## 🔍 Code Quality
+
+- **Linting**: `yarn lint`
+- **Type Checking**: `yarn type-check`
+- **Formatting**: `yarn format`
+
+## 🌐 Deployment
+
+The project is configured for deployment on Netlify and can be accessed at [my-cv123.netlify.app](https://my-cv123.netlify.app)
+
+## 📁 Project Structure
+
+```
+my-cv/
+├── app/                # Next.js app directory
+│   ├── components/    # Reusable components
+│   ├── containers/    # Page containers
+│   ├── functions/     # Utility functions
+│   ├── styles/        # Global styles
+│   ├── types/         # TypeScript types
+│   ├── utils/         # Utility functions
+│   └── tests/         # Test files
+├── public/            # Static assets
+└── ...config files
+```
+
+## 📄 License
+
+This project is private and proprietary.
+
 ## 🤝 Contributing
 
-1 - Clone the project. <br />
-2 - Fork the project. <br />
-3 - Create your own branch: ```
-git checkout -b <your branchname>``` <br />
-4 - Push changes. <br />
-5 - Create a pull request. <br />
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/fadihanna123/my-cv/issues).
-
+This is a personal project and is not open for contributions at this time.
