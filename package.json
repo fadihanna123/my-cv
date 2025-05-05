@@ -31,7 +31,7 @@
     "react": "19.1.0",
     "react-countup": "6.5.3",
     "react-dom": "19.1.0",
-    "react-hook-form": "7.56.1"
+    "react-hook-form": "7.56.2"
   },
   "devDependencies": {
     "@eslint/compat": "1.2.9",
