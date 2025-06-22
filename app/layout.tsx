@@ -17,6 +17,10 @@ const rootLayout: React.FC<{ children: React.ReactNode }> = ({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <meta httpEquiv="X-UA-Compatible" content="IE=7" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Fadi Hanna" />
         <meta
           name="keywords"
           content="Fadi Hanna, CV, Portfolio, Experience, Projects, Education"
@@ -25,8 +29,6 @@ const rootLayout: React.FC<{ children: React.ReactNode }> = ({
           name="description"
           content="🧑‍💼My CV is my portfolio website to show my experiences, projects and education."
         />
-        <meta httpEquiv="X-UA-Compatible" content="IE=7" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
