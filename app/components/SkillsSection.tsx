@@ -16,6 +16,7 @@ const SkillsSection = () => (
               alt={skill.value}
               width={60}
               height={60}
+              title={skill.value}
             />
           </span>
         );
