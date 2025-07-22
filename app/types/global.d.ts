@@ -21,7 +21,7 @@ declare global {
     title: string;
     desc: string | undefined;
     URL: string | undefined;
-    GitURL: string;
+    GitURL: string | undefined;
     assetPath: any;
   }
 

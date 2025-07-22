@@ -202,6 +202,14 @@ export const projectData: projectData[] = [
     GitURL: "https://github.com/fadihanna123/chatapp",
     assetPath: "/Chatapp2.png",
   },
+  {
+    id: 11,
+    title: "Video Call - Fadi Club",
+    desc: "A simple web-based video meeting app built with Agora RTC SDK and TypeScript.",
+    URL: "https://video-call-appx.netlify.app/",
+    GitURL: undefined,
+    assetPath: "/FadiClub.png",
+  },
 ];
 
 export const skills: skillsData[] = [
