@@ -59,7 +59,7 @@ const ProjectsSection = () => (
           );
         })}
     </div>
-    <div className="text-center text-xl">
+    <div className="text-center mt-5 text-xl">
       {manyOther} <br />
       <a
         target="_blank"
