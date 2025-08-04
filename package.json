@@ -24,6 +24,7 @@
     "test": "vitest",
     "type-check": "tsc --noEmit",
     "ci": "yarn build && yarn lint && yarn test",
+    "archive": "yarn pack",
     "clear": "rimraf ./node_modules ./build ./.next"
   },
   "dependencies": {
