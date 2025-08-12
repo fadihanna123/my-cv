@@ -24,7 +24,7 @@
     "test": "vitest",
     "type-check": "tsc --noEmit",
     "ci": "yarn build && yarn lint && yarn test",
-    "archive": "yarn pack",
+    "archive": "yarn pack --filename=my-cv.zip",
     "clear": "rimraf ./node_modules ./build ./.next"
   },
   "dependencies": {
