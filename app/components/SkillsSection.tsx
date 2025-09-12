@@ -2,7 +2,7 @@ import Image from "next/image";
 import { skills, skillsSection } from "@utils/consts";
 
 const SkillsSection = () => (
-  <div className="text-center">
+  <div className="text-center dark:text-neutral-300">
     <h1 className="my-4 text-3xl">
       <span className="mr-6 text-4xl sm:mr-2">🧑‍💻</span>
       <span className="mr-[80px] italic sm:ml-2 sm:mr-6">{skillsSection}</span>

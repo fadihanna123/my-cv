@@ -3,6 +3,12 @@
 @use "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
   as googlefonts;
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  @apply transition-colors duration-200;
+}
+
 *,
 *::before,
 *::after {

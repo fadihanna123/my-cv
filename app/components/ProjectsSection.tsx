@@ -8,7 +8,7 @@ import {
 import Image from "next/image";
 
 const ProjectsSection = () => (
-  <>
+  <div className="dark:text-neutral-300">
     <h1 className="my-4 text-center text-3xl shadow-md">
       <i className="fa-solid fa-briefcase mr-2"></i>
       <span className="ml-2 mr-9 italic">{projectsSection}</span>
@@ -70,7 +70,7 @@ const ProjectsSection = () => (
       </a>
       ...
     </div>
-  </>
+  </div>
 );
 
 export default ProjectsSection;

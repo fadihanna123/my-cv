@@ -21,7 +21,7 @@ const ContactSection: FC = () => {
     useState<boolean>(false);
 
   return (
-    <div className="text-center mt-15" id="contact">
+    <div className="text-center mt-15 dark:text-neutral-300" id="contact">
       <h1 className="italic text-4xl mb-3">
         <i className="fa-solid fa-envelope"></i> {contactMe}
       </h1>
@@ -66,7 +66,7 @@ const ContactSection: FC = () => {
         )}
         <div className="mb-5 text-center">
           <label
-            className="block text-gray-700 text-lg font-bold"
+            className="block text-gray-700 text-lg font-bold dark:text-neutral-300"
             htmlFor="contact_fullName"
           >
             <i className="fa-solid fa-user mr-2"></i>
@@ -82,7 +82,7 @@ const ContactSection: FC = () => {
         </div>
         <div className="mb-5 text-center">
           <label
-            className="block text-gray-700 text-lg font-bold"
+            className="block text-gray-700 text-lg font-bold dark:text-neutral-300"
             htmlFor="contact_email"
           >
             <i className="fa-solid fa-at mr-2"></i> {email}:
@@ -98,7 +98,7 @@ const ContactSection: FC = () => {
         </div>
         <div className="mb-5 text-center">
           <label
-            className="block relative text-gray-700 text-lg font-bold"
+            className="block relative text-gray-700 text-lg font-bold dark:text-neutral-300"
             htmlFor="contact_mobnr"
           >
             <i className="fa-solid fa-mobile mr-2"></i> {mobile}:
@@ -114,7 +114,7 @@ const ContactSection: FC = () => {
         </div>
         <div className="mb-5 text-center">
           <label
-            className="block text-gray-700 text-lg font-bold"
+            className="block text-gray-700 text-lg font-bold dark:text-neutral-300"
             htmlFor="contact_msg"
           >
             <i className="fa-solid fa-comment mr-2"></i> {message}:

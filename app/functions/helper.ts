@@ -1,6 +1,13 @@
 import emailjs from "@emailjs/browser";
 import { emailJSDetails } from "@utils/consts";
 
+export const toggleTheme = (
+  darkMode: boolean,
+  setDarkMode: (darkMode: boolean) => void,
+) => {
+  setDarkMode(!darkMode);
+};
+
 export const showPrevImage = (
   setIndex: (index: any) => void,
   images: string[],

@@ -52,6 +52,11 @@ declare global {
 
   declare module "*.JPG";
 
+  export type GlobalContent = {
+    darkMode: boolean;
+    setDarkMode: (darkMode: boolean) => void;
+  };
+
   interface onSubmitProps {
     setViewFormAlert: (viewFormAlert: boolean) => void;
     setSuccessAlertLoading: (successAlertLoading: boolean) => void;

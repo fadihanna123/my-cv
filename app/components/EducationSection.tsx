@@ -3,7 +3,10 @@ import TxtSection from "../ui/TxtSection";
 import { FC } from "react";
 
 const EducationSection: FC = () => (
-  <div className="text-left text-xl sm:text-center" id="education">
+  <div
+    className="text-left text-xl sm:text-center dark:text-neutral-300"
+    id="education"
+  >
     <h1 className="my-4 text-center text-3xl">
       <i className="fa-solid fa-book mr-2"></i>
       <span className="ml-2 mr-6 italic">{educationSection}</span>

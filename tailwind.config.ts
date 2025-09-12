@@ -6,6 +6,7 @@ const config: NextConfig = {
     extend: {},
   },
   plugins: [],
+  darkMode: "class",
 };
 
 export default config;

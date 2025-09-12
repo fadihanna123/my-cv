@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 
 const ExperienceSection: React.FC = () => {
   return (
-    <div className="text-xl">
+    <div className="text-xl dark:text-neutral-300">
       <h1 className="my-4 text-center text-3xl">
         <span className="mr-6 text-4xl sm:mr-2">🧑‍💻</span>
         <span className="italic sm:ml-2 sm:mr-6">{experienceSection}</span>
