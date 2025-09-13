@@ -88,7 +88,7 @@ const ContactSection: FC = () => {
             <i className="fa-solid fa-at mr-2"></i> {email}:
           </label>
           <input
-            className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
+            className="dark:placeholder-[#fff] placeholder-[#000] focus:placeholder-black border shadow appearance-none rounded py-2 px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
             type="email"
             {...register("contact_email")}
             required
@@ -104,7 +104,7 @@ const ContactSection: FC = () => {
             <i className="fa-solid fa-mobile mr-2"></i> {mobile}:
           </label>
           <input
-            className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
+            className="dark:placeholder-[#fff] placeholder-[#000] focus:placeholder-black border shadow appearance-none rounded py-2 px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
             type="text"
             {...register("contact_mobnr")}
             id="contact_mobnr"
@@ -122,7 +122,7 @@ const ContactSection: FC = () => {
           <textarea
             rows={4}
             cols={22}
-            className="focus:placeholder-black border shadow appearance-none rounded py-2 px-3 sm:px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
+            className="dark:placeholder-[#fff] placeholder-[#000] focus:placeholder-black border shadow appearance-none rounded py-2 px-3 sm:px-3 leading-tight focus:shadow-outline focus:border-blue-500 focus:shadow-outline focus:ring-blue-500"
             {...register("contact_msg")}
             id="contact_msg"
             required

@@ -1,7 +1,3 @@
-"use client";
-
-import { toggleTheme } from "@app/functions";
-import { useGlobalContext } from "@app/states";
 import {
   contactSection,
   educationSection,
@@ -10,8 +6,6 @@ import {
 } from "@utils/consts";
 
 const Header: React.FC = () => {
-  const { darkMode, setDarkMode } = useGlobalContext();
-
   return (
     <nav className="dark:text-neutral-300 mb-10 mt-2 text-center text-2xl md:text-right md:text-lg menuContainer">
       <ul>
@@ -40,15 +34,6 @@ const Header: React.FC = () => {
             <i className="fa-solid fa-envelope mr-5 sm:mr-2"></i>
             <span className="ml-2 mr-6 md:mr-auto">{contactSection}</span>
           </a>
-        </li>
-        <li className="m-4 block p-4 sm:inline">
-          <button onClick={() => toggleTheme(darkMode, setDarkMode)}>
-            {darkMode ? (
-              <i className="fa-solid fa-moon"></i>
-            ) : (
-              <i className="fa-solid fa-sun"></i>
-            )}
-          </button>
         </li>
       </ul>
     </nav>
