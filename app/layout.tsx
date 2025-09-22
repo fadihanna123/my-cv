@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 // Components
 import "@styles/index.css";
@@ -40,6 +41,7 @@ const rootLayout: React.FC<{ children: React.ReactNode }> = ({
         <title> Fadi Hanna - CV </title>
       </head>
       <body>{children}</body>
+      <GoogleAnalytics gaId="G-ZP6HC56EFF" />
     </html>
   );
 };
