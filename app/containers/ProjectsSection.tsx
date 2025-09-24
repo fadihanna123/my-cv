@@ -21,7 +21,7 @@ const ProjectsSection = () => {
           .map((project) => {
             return (
               <div
-                className="rounded overflow-hidden shadow-lg dark:bg-linear-to-l dark:from-slate-800 dark:to-indigo-500"
+                className="rounded overflow-hidden shadow-lg dark:bg-linear-to-l dark:from-slate-800 dark:to-indigo-500 hover:scale-105"
                 key={project.id}
               >
                 <Image
