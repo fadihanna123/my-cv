@@ -39,8 +39,8 @@ jobs:
         with:
           node-version: "22.19"
       - name: Install dependencies
-        run: yarn setup    
+        run: yarn setup
       - name: Test
-        run: yarn test  
+        run: yarn test
       - name: Build with Next.js
         run: yarn build
