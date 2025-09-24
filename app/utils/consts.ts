@@ -173,7 +173,7 @@ export const projectData: projectData[] = [
   {
     id: 7,
     title: "Camera Website",
-    desc: undefined,
+    desc: "A full-stack web application for login and register to manage and displaying videos as be taken of the camera.",
     URL: undefined,
     GitURL: "https://github.com/fadihanna123/CameraWebsite/",
     assetPath: "/CameraWebsite.png",
@@ -189,7 +189,7 @@ export const projectData: projectData[] = [
   {
     id: 9,
     title: "Billigast & Begagnade",
-    desc: undefined,
+    desc: "A modern e-commerce website project built with HTML, CSS, TypeScript, and JavaScript.",
     URL: undefined,
     GitURL: "https://github.com/fadihanna123/E-handelprojekt",
     assetPath: "/E-handelproject.png",
@@ -197,18 +197,26 @@ export const projectData: projectData[] = [
   {
     id: 10,
     title: "Chat App 2",
-    desc: undefined,
+    desc: "A modern real-time chat application built with a React frontend and Node.js backend.",
     URL: undefined,
     GitURL: "https://github.com/fadihanna123/chatapp",
     assetPath: "/Chatapp2.png",
   },
   {
     id: 11,
-    title: "Video Call - Fadi Club",
+    title: "Fadi Streams",
     desc: "A simple web-based video meeting app built with Agora RTC SDK and TypeScript.",
-    URL: "https://video-call-appx.netlify.app/",
+    URL: "https://video-call-appx.netlify.app",
     GitURL: undefined,
     assetPath: "/FadiClub.png",
+  },
+  {
+    id: 12,
+    title: "Movies Finder",
+    desc: "A movie library app to search movies and learn know about it.",
+    URL: "https://movie-findery.netlify.app",
+    GitURL: undefined,
+    assetPath: "/moviesFinder.png",
   },
 ];
 

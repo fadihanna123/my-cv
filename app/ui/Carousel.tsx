@@ -15,16 +15,18 @@ const Carousel: React.FC<{ images: string[] }> = ({
         if (index === images.length - 1) return 0;
         return index + 1;
       });
-    }, 3000);
+    }, 5000);
   }, [images.length]);
 
   return (
-    <div className="carouselContainer h-[500px] w-full max-w-[1200px] transition-transform">
+    <div className="carouselContainer h-[500px] w-full max-w-[1200px] transition-transform m-2 p-2">
       <div className="relative size-full">
         <Image
           alt="CarouselImage"
           src={images[index]}
           className="block size-full"
+          width={0}
+          height={0}
         />
         <button
           onClick={() => showPrevImage(setIndex, images)}

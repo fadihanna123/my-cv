@@ -1,4 +1,3 @@
-import { useGlobalContext } from "@app/states";
 import {
   githubProfile,
   manyOther,
@@ -9,56 +8,53 @@ import {
 import Image from "next/image";
 
 const ProjectsSection = () => {
-  const { darkMode } = useGlobalContext();
-
   return (
     <div className="dark:text-neutral-300">
       <h1 className="my-4 text-center text-3xl shadow-md">
         <i className="fa-solid fa-briefcase mr-2"></i>
         <span className="ml-2 mr-9 italic">{projectsSection}</span>
       </h1>
-      <div className="flex flex-col flex-wrap overflow-hidden rounded-sm shadow-lg sm:flex-row">
+
+      <div className="p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
         {projectData
           .sort((_a, b) => (b.URL === undefined ? -1 : 1))
           .map((project) => {
             return (
               <div
-                className="mt-2 w-full rounded-sm border p-2 text-center sm:w-1/2"
+                className="rounded overflow-hidden shadow-lg dark:bg-slate-800"
                 key={project.id}
               >
                 <Image
-                  className="h-[200px] w-full object-contain p-2 sm:h-[200px]"
+                  className="w-full h-[200px]"
                   src={project.assetPath}
-                  alt={project.assetPath}
-                  width={0}
-                  height={500}
+                  alt={project.title}
+                  width={500}
+                  height={200}
                 />
-                <div className="p-2 py-4">
-                  <div className="mb-2 h-[170px] text-xl font-bold">
-                    <h2> {project.title} </h2>
-                    <p className="text-center text-[18px]">
-                      {project.desc ? (
-                        project.desc
-                      ) : (
-                        <small className="italic">{noDescription}</small>
-                      )}
-                    </p>
-                  </div>
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2">{project.title}</div>
+                  <p className="text-gray-700 text-base dark:text-white italic h-[100px]">
+                    {project.desc || noDescription}
+                  </p>
                 </div>
-                <div
-                  className={`iconContainer mt-2 w-full bg-dark text-black ${darkMode ? "bg-black text-white" : "bg-white"}`}
-                >
+                <div className="px-6 pt-4 pb-2">
                   {project.GitURL && (
-                    <a href={project.GitURL} className="m-2" target="_blank">
+                    <a
+                      href={project.GitURL}
+                      target="_blank"
+                      className="inline-block bg-black dark:bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-white dark:text-gray-700 mr-2 mb-2"
+                    >
                       <i className="fa-brands fa-github text-2xl hover:animate-bounce"></i>
                     </a>
                   )}
-                  {project.URL ? (
-                    <a href={project.URL} className="m-2" target="_blank">
+                  {project.URL && (
+                    <a
+                      href={project.URL}
+                      target="_blank"
+                      className="inline-block bg-black dark:bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-white dark:text-gray-700 mr-2 mb-2"
+                    >
                       <i className="fa-solid fa-globe text-2xl hover:animate-bounce"></i>
                     </a>
-                  ) : (
-                    ""
                   )}
                 </div>
               </div>
