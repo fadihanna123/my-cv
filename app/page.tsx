@@ -2,16 +2,16 @@
 import React, { useState } from "react";
 import "@styles/App.css";
 import {
-  ContactSection,
   EducationSection,
   ExperienceSection,
   PersonCardSection,
+  ProjectsSection,
   SkillsSection,
 } from "./components";
 import { Footer, Header } from "./inc";
 import { MyGlobalContext } from "./states";
 import { toggleTheme } from "./functions";
-import { ProjectsSection } from "./containers";
+import { ContactSection } from "./containers";
 
 const Layout: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);

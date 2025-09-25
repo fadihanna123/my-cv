@@ -1,4 +1,4 @@
-import ProjectsSection from "@app/containers/ProjectsSection";
+import ProjectsSection from "@app/components/ProjectsSection";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 import { expect, it } from "vitest";
