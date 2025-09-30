@@ -60,6 +60,8 @@ declare global {
   interface onSubmitProps {
     setViewFormAlert: (viewFormAlert: boolean) => void;
     setSuccessAlertLoading: (successAlertLoading: boolean) => void;
+    setIsError: (isError: boolean) => void;
+    contactFormRef: React.RefObject<HTMLFormElement | null>;
   }
 }
 

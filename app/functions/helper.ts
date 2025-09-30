@@ -30,7 +30,12 @@ export const showNextImage = (
 
 export const onSubmit = (
   data: ContactForm,
-  { setViewFormAlert, setSuccessAlertLoading }: onSubmitProps,
+  {
+    setViewFormAlert,
+    setSuccessAlertLoading,
+    setIsError,
+    contactFormRef,
+  }: onSubmitProps,
 ) => {
   const templateParams: Record<keyof ContactForm, string> = {
     contact_fullName: data.contact_fullName,
@@ -47,15 +52,16 @@ export const onSubmit = (
       emailJSDetails.serviceId as string,
       emailJSDetails.templateId as string,
       templateParams,
+      emailJSDetails.publicKey as string,
     )
     .then(
       () => {
         setViewFormAlert(true);
         setSuccessAlertLoading(false);
+        contactFormRef.current?.reset();
       },
-      (error) => {
-        // eslint-disable-next-line no-console
-        console.log("FAILED...", error);
+      () => {
+        setIsError(true);
         setSuccessAlertLoading(false);
       },
     );

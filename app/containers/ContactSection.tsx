@@ -1,5 +1,5 @@
 "use client";
-import React, { FC, useState } from "react";
+import React, { FC, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import {
   contactMe,
@@ -17,8 +17,10 @@ import { onSubmit } from "@functions/helper";
 const ContactSection: FC = () => {
   const { register, handleSubmit } = useForm<ContactForm>();
   const [viewFormAlert, setViewFormAlert] = useState(false);
+  const [isError, setIsError] = useState<boolean>(false);
   const [successAlertLoading, setSuccessAlertLoading] =
     useState<boolean>(false);
+  const contactFormRef = useRef<HTMLFormElement | null>(null);
 
   return (
     <div className="text-center mt-15 dark:text-neutral-300" id="contact">
@@ -27,10 +29,21 @@ const ContactSection: FC = () => {
       </h1>
       <form
         onSubmit={handleSubmit((data) =>
-          onSubmit(data, { setViewFormAlert, setSuccessAlertLoading }),
+          onSubmit(data, {
+            setViewFormAlert,
+            setSuccessAlertLoading,
+            setIsError,
+            contactFormRef,
+          }),
         )}
+        ref={contactFormRef}
         className="max-w-sm mx-auto"
       >
+        {isError && !viewFormAlert && (
+          <p className="text-red-500">
+            Something went wrong. Please try again later.
+          </p>
+        )}
         {successAlertLoading && (
           <div className="flex justify-center">
             <div
