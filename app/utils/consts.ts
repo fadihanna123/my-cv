@@ -20,7 +20,7 @@ export const frontendDeveloper = "Frontend developer";
 export const noDescription = "No description yet";
 export const manyOther = "And many other in";
 export const githubProfile = "Github profile";
-export const downloadCV = "Download My CV (291 kb)";
+export const downloadCV = "Download My CV (319 kb)";
 
 export const carouselImageCollection = [
   "/Pixabayfinder.png",
