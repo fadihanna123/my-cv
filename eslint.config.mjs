@@ -15,12 +15,7 @@ const eslintConfig = [
   {
     ignores: ["build/**", "node_modules", ".next"],
   },
-  ...compat.extends(
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended",
-    "next/core-web-vitals",
-    "next/typescript",
-  ),
+  ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     plugins: {
       "react-refresh": reactRefresh,
