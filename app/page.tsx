@@ -12,6 +12,7 @@ import { Footer, Header } from "./inc";
 import { MyGlobalContext } from "./states";
 import { toggleTheme } from "./functions";
 import { ContactSection } from "./containers";
+import { ClipLoader } from "react-spinners";
 
 const Layout: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -24,8 +25,14 @@ const Layout: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen bg-neutral-100 dark:bg-neutral-900">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-black"></div>
+      <div className="flex items-center justify-center h-screen bg-neutral-900 text-white">
+        <ClipLoader
+          color={"white"}
+          loading={loading}
+          size={100}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
       </div>
     );
   }
