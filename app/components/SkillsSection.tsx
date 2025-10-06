@@ -17,6 +17,7 @@ const SkillsSection = () => (
               width={60}
               height={60}
               title={skill.value}
+              priority
             />
           </span>
         );

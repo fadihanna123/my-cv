@@ -1,4 +1,4 @@
-import ContactSection from "@app/containers/ContactSection";
+import ContactSection from "@app/containers/Contact/ContactSection";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 import { expect, it } from "vitest";

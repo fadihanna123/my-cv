@@ -19,7 +19,7 @@ const Carousel: React.FC<{ images: string[] }> = ({
   }, [images.length]);
 
   return (
-    <div className="carouselContainer h-[500px] w-full max-w-[1200px] transition-transform m-2 p-2">
+    <div className="aspect-10/6 carouselContainer h-[500px] w-full max-w-[1200px] transition-transform m-2 p-2">
       <div className="relative size-full">
         <Image
           alt="CarouselImage"
@@ -27,6 +27,7 @@ const Carousel: React.FC<{ images: string[] }> = ({
           className="block size-full"
           width={0}
           height={0}
+          priority
         />
         <button
           onClick={() => showPrevImage(setIndex, images)}

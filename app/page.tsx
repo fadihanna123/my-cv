@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "@styles/App.css";
 import {
   EducationSection,
@@ -15,6 +15,20 @@ import { ContactSection } from "./containers";
 
 const Layout: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-neutral-100 dark:bg-neutral-900">
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-black"></div>
+      </div>
+    );
+  }
 
   return (
     <MyGlobalContext.Provider value={{ darkMode, setDarkMode }}>

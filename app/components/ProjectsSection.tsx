@@ -31,6 +31,7 @@ const ProjectsSection = () => {
                   alt={project.title}
                   width={500}
                   height={200}
+                  priority
                 />
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">{project.title}</div>

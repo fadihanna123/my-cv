@@ -52,10 +52,20 @@ declare global {
 
   declare module "*.JPG";
 
-  export type GlobalContent = {
+  type GlobalContent = {
     darkMode: boolean;
     setDarkMode: (darkMode: boolean) => void;
   };
+
+  interface ContactFormProps {
+    setViewFormAlert: (viewFormAlert: boolean) => void;
+    setSuccessAlertLoading: (successAlertLoading: boolean) => void;
+    setIsError: (isError: boolean) => void;
+    contactFormRef: RefObject<HTMLFormElement | null>;
+    isError: boolean;
+    viewFormAlert: boolean;
+    successAlertLoading: boolean;
+  }
 
   interface onSubmitProps {
     setViewFormAlert: (viewFormAlert: boolean) => void;
