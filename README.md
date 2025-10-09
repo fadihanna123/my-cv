@@ -86,7 +86,7 @@ yarn test
 
 ## 🌐 Deployment
 
-The project is configured for deployment on Netlify and can be accessed at [my-cv123.netlify.app](https://my-cv123.netlify.app)
+The project is configured for deployment on Netlify.
 
 ## 📁 Project Structure
 
@@ -111,3 +111,4 @@ This project is private and proprietary.
 ## 🤝 Contributing
 
 This is a personal project and is not open for contributions at this time.
+
