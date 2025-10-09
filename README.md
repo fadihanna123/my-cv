@@ -2,6 +2,8 @@
 
 A modern, responsive CV/portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
+## [Visit](https://my-cv-sigma-olive.vercel.app)
+
 ## 🚀 Features
 
 - Modern and responsive design
@@ -108,7 +110,11 @@ my-cv/
 
 This project is private and proprietary.
 
+## Screenshot
+![Screenshot](screenshot.png "Screenshot")
+
 ## 🤝 Contributing
 
 This is a personal project and is not open for contributions at this time.
+
 
