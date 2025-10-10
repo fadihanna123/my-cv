@@ -10,7 +10,10 @@ const SkillsSection = () => (
     <section className="m-2 flex flex-wrap">
       {skills.map((skill, i: number) => {
         return (
-          <span key={i} className="m-4 w-[8%] p-2 sm:m-4 skillsImgContainer">
+          <span
+            key={i}
+            className="m-4 w-[8%] p-4 sm:m-4 skillsImgContainer border rounded-full"
+          >
             <Image
               src={skill.assetURL!}
               alt={skill.value}
@@ -18,6 +21,7 @@ const SkillsSection = () => (
               height={60}
               title={skill.value}
               priority
+              className="mx-auto"
             />
           </span>
         );
