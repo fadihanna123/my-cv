@@ -22,6 +22,7 @@ export const manyOther = "And many other in";
 export const githubProfile = "Github profile";
 export const contactErrorMsg = "Something went wrong. Please try again later.";
 export const downloadCV = "Download My CV (319 kb)";
+export const GithubURLBase = "https://github.com/fadihanna123/";
 
 export const carouselImageCollection = [
   "/Pixabayfinder.png",
@@ -127,24 +128,24 @@ export const projectData: projectData[] = [
     id: 1,
     title: "PixabayFinder",
     desc: "🖼️ An app to fetch images and videos from Pixabay.",
-    URL: "https://pixabayfinderx.netlify.app/",
-    GitURL: "https://github.com/fadihanna123/PixabayFinder/",
+    URL: "https://pixabay-finder.vercel.app",
+    GitURL: `${GithubURLBase}/PixabayFinder`,
     assetPath: "/Pixabayfinder.png",
   },
   {
     id: 2,
     title: "Intranat",
     desc: "🧑‍💼A dashboard application that helps staff communicate with their managers.",
-    URL: "https://intranet.gssonsel.se.185-133-206-116.bb.kringelstan.se/",
-    GitURL: "https://github.com/fadihanna123/Intranat/",
+    URL: "https://intranet.gssonsel.se.185-133-206-116.bb.kringelstan.se",
+    GitURL: `${GithubURLBase}/Intranat`,
     assetPath: "/Intranat.png",
   },
   {
     id: 3,
     title: "Datahjälp",
     desc: "💻 Datahjälp is a company that informs customers about the company's prices and contact details for these companies. Datahjälp helps customers fix their computers.",
-    URL: "https://fadihanna123.github.io/DatahjalpProjekt/",
-    GitURL: "https://github.com/fadihanna123/DatahjalpProjekt/",
+    URL: "https://fadihanna123.github.io/DatahjalpProjekt",
+    GitURL: `${GithubURLBase}/DatahjalpProjekt`,
     assetPath: "/Datahjalp.png",
   },
   {
@@ -152,7 +153,7 @@ export const projectData: projectData[] = [
     title: "Old My CV",
     desc: "🏢 A website to show my CV in webapplication.",
     URL: undefined,
-    GitURL: "https://github.com/fadihanna123/CV_React/",
+    GitURL: `${GithubURLBase}/CV_React`,
     assetPath: "/CV_React.png",
   },
   {
@@ -160,7 +161,7 @@ export const projectData: projectData[] = [
     title: "Din Restaurang",
     desc: "🍔 A restaurantapplication and adminpanel as shows and manages 5 food types.",
     URL: undefined,
-    GitURL: "https://github.com/fadihanna123/Din_Restaurang/",
+    GitURL: `${GithubURLBase}/Din_Restaurang`,
     assetPath: "/Dinrestaurang.png",
   },
   {
@@ -168,7 +169,7 @@ export const projectData: projectData[] = [
     title: "Chat Me",
     desc: "💬 A chatapplication to chat other people in the public chat. All messages will be shown in the chatroom.",
     URL: undefined,
-    GitURL: "https://github.com/fadihanna123/chatMe/",
+    GitURL: `${GithubURLBase}/chatMe`,
     assetPath: "/ChatMe.png",
   },
   {
@@ -176,7 +177,7 @@ export const projectData: projectData[] = [
     title: "Camera Website",
     desc: "A full-stack web application for login and register to manage and displaying videos as be taken of the camera.",
     URL: undefined,
-    GitURL: "https://github.com/fadihanna123/CameraWebsite/",
+    GitURL: `${GithubURLBase}/CameraWebsite`,
     assetPath: "/CameraWebsite.png",
   },
   {
@@ -184,7 +185,7 @@ export const projectData: projectData[] = [
     title: "My CV (current)",
     desc: "🧑‍💼My CV is my portfolio website to show my experiences, projects and education.",
     URL: undefined,
-    GitURL: "https://github.com/fadihanna123/my-cv",
+    GitURL: `${GithubURLBase}/my-cv`,
     assetPath: "/my_cv.png",
   },
   {
@@ -192,7 +193,7 @@ export const projectData: projectData[] = [
     title: "Billigast & Begagnade",
     desc: "A modern e-commerce website project built with HTML, CSS, TypeScript, and JavaScript.",
     URL: undefined,
-    GitURL: "https://github.com/fadihanna123/E-handelprojekt",
+    GitURL: `${GithubURLBase}/E-handelprojekt`,
     assetPath: "/E-handelproject.png",
   },
   {
@@ -200,14 +201,14 @@ export const projectData: projectData[] = [
     title: "Chat App 2",
     desc: "A modern real-time chat application built with a React frontend and Node.js backend.",
     URL: undefined,
-    GitURL: "https://github.com/fadihanna123/chatapp",
+    GitURL: `${GithubURLBase}/chatapp`,
     assetPath: "/Chatapp2.png",
   },
   {
     id: 11,
     title: "Fadi Streams",
     desc: "A simple web-based video meeting app built with Agora RTC SDK and TypeScript.",
-    URL: "https://video-call-appx.netlify.app",
+    URL: "https://fadistreams.vercel.app",
     GitURL: undefined,
     assetPath: "/FadiClub.png",
   },
@@ -215,7 +216,7 @@ export const projectData: projectData[] = [
     id: 12,
     title: "Movies Finder",
     desc: "A movie library app to search movies and learn know about it.",
-    URL: "https://movie-findery.netlify.app",
+    URL: "https://movies-finder-wine.vercel.app",
     GitURL: undefined,
     assetPath: "/moviesFinder.png",
   },
