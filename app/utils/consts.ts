@@ -21,7 +21,7 @@ export const noDescription = "No description yet";
 export const manyOther = "And many other in";
 export const githubProfile = "Github profile";
 export const contactErrorMsg = "Something went wrong. Please try again later.";
-export const downloadCV = "Download My CV (319 kb)";
+export const downloadCV = "Download My CV (318 kb)";
 export const GithubURLBase = "https://github.com/fadihanna123/";
 
 export const carouselImageCollection = [
