@@ -13,13 +13,17 @@ const PersonCardSection: React.FC = () => (
     />
     <div className="mt-20">
       <h1 className="text-center text-6xl text-black">{myFullName}</h1>
-      <h4 className="text-center text-2xl text-sky-600">
+      <h4 className="text-center text-2xl text-sky-600 cursor typewriter-animation">
         {" "}
         {frontendDeveloper}{" "}
       </h4>
       <div className="text-center">
         <a href="https://github.com/fadihanna123" target="_blank">
-          <i className="fa-brands fa-github text-[40px] text-black hover:animate-bounce"></i>
+          <i className="fa-brands fa-github text-[40px] text-black hover:animate-bounce m-2"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/fadihanna123" target="_blank">
+          <i className="fa-brands fa-linkedin text-[40px] text-black hover:animate-bounce m-2"></i>
         </a>
       </div>
       <br />
