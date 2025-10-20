@@ -23,3 +23,5 @@ tsconfig.tsbuildinfo
 # Environments variables
 .env
 .docker.env
+# Sentry Config File
+.env.sentry-build-plugin
