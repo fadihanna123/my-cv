@@ -1,5 +1,0 @@
-git pull
-yarn
-yarn lint
-yarn format
-npx pretty-quick --staged
