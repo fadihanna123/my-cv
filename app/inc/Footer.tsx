@@ -7,7 +7,7 @@ const Footer: FC = () => {
       <a
         className="link relative"
         href="./Fadi_Hanna_CV_IT.pdf"
-        download="./Fadi_Hanna_CV_IT.pdf"
+        download="Fadi_Hanna_CV_IT"
       >
         <i className="fa-solid fa-file mr-2"></i> {downloadCV}
       </a>
