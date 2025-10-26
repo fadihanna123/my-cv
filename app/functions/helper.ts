@@ -1,5 +1,5 @@
 import emailjs from "@emailjs/browser";
-import { emailJSDetails } from "@utils/consts";
+import { emailJSDetails } from "@app/utils/contact-consts";
 
 export const toggleTheme = (
   darkMode: boolean,

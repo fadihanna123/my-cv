@@ -1,4 +1,4 @@
-import { educationSection, eduData } from "@utils/consts";
+import { educationSection, eduData } from "@app/utils";
 import TxtSection from "../ui/TxtSection";
 import { FC } from "react";
 

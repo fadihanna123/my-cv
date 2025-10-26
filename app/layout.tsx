@@ -4,7 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 // Components
 import "@styles/index.css";
-import { emailJSDetails } from "@utils/consts";
+import { emailJSDetails } from "@app/utils/contact-consts";
 
 emailjs.init({
   publicKey: emailJSDetails.publicKey,

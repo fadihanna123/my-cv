@@ -1,4 +1,4 @@
-import { downloadCV } from "@app/utils/consts";
+import { downloadCV } from "@app/utils";
 import { FC } from "react";
 
 const Footer: FC = () => {

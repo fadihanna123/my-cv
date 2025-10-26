@@ -1,5 +1,4 @@
-import { send } from "@app/utils/consts";
-import React from "react";
+import { send } from "@app/utils";
 
 const ContactBtn = () => {
   return (

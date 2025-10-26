@@ -1,21 +1,17 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { useForm } from "react-hook-form";
 import { onSubmit } from "@functions/helper";
-import {
-  contactErrorMsg,
-  email,
-  fullName,
-  message,
-  mobile,
-  sending,
-  thanksForMsg_Text,
-  weWillReachBack_Text,
-} from "@app/utils/consts";
 import ContactBtn from "./ContactBtn";
 import ContactFullNameField from "./ContactFullNameField";
 import ContactEmailField from "./ContactEmailField";
 import ContactMobNrField from "./ContactMobNrField";
 import ContactMsgField from "./ContactMsgField";
+import {
+  contactErrorMsg,
+  sending,
+  thanksForMsg_Text,
+  weWillReachBack_Text,
+} from "@app/utils";
 
 const ContactForm: FC<ContactFormProps> = ({
   setViewFormAlert,
@@ -78,40 +74,15 @@ const ContactForm: FC<ContactFormProps> = ({
         </div>
       )}
       <div className="mb-5 text-center">
-        <label
-          className="block text-gray-700 text-lg font-bold dark:text-neutral-300"
-          htmlFor="contact_fullName"
-        >
-          <i className="fa-solid fa-user mr-2"></i>
-          {fullName}:
-        </label>
         <ContactFullNameField />
       </div>
       <div className="mb-5 text-center">
-        <label
-          className="block text-gray-700 text-lg font-bold dark:text-neutral-300"
-          htmlFor="contact_email"
-        >
-          <i className="fa-solid fa-at mr-2"></i> {email}:
-        </label>
         <ContactEmailField />
       </div>
       <div className="mb-5 text-center">
-        <label
-          className="block relative text-gray-700 text-lg font-bold dark:text-neutral-300"
-          htmlFor="contact_mobnr"
-        >
-          <i className="fa-solid fa-mobile mr-2"></i> {mobile}:
-        </label>
         <ContactMobNrField />
       </div>
       <div className="mb-5 text-center">
-        <label
-          className="block text-gray-700 text-lg font-bold dark:text-neutral-300"
-          htmlFor="contact_msg"
-        >
-          <i className="fa-solid fa-comment mr-2"></i> {message}:
-        </label>
         <ContactMsgField />
       </div>
       <ContactBtn />

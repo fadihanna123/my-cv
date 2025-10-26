@@ -1,9 +1,9 @@
 import {
-  contactSection,
   educationSection,
   experienceSection,
   projectsSection,
-} from "@utils/consts";
+  contactSection,
+} from "@app/utils";
 
 const Header: React.FC = () => {
   return (

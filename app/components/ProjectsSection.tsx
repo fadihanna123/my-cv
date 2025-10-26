@@ -4,7 +4,7 @@ import {
   noDescription,
   projectData,
   projectsSection,
-} from "@utils/consts";
+} from "@app/utils";
 import Image from "next/image";
 
 const ProjectsSection = () => {

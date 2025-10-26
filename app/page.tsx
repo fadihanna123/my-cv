@@ -11,7 +11,7 @@ import {
 import { Footer, Header } from "./inc";
 import { MyGlobalContext } from "./states";
 import { toggleTheme } from "./functions";
-import { ContactSection } from "./containers";
+import { ContactSection } from "./containers/Contact";
 import { ClipLoader } from "react-spinners";
 
 const Layout: React.FC = () => {
@@ -40,7 +40,7 @@ const Layout: React.FC = () => {
   return (
     <MyGlobalContext.Provider value={{ darkMode, setDarkMode }}>
       <div
-        className={`wrapper container m-0 overflow-auto border-0 p-0 text-lg font-bold text-black outline-0 bg-neatural-100 dark:bg-neutral-900 ${
+        className={`wrapper transition-all duration-300 container m-0 overflow-auto border-0 p-0 text-lg font-bold text-black outline-0 bg-neatural-100 dark:bg-neutral-900 ${
           !darkMode && "dark"
         }`}
       >
@@ -63,13 +63,13 @@ const Layout: React.FC = () => {
         </div>
         <Footer />
         <button
-          className="fixed right-0 bottom-0 m-3 p-2 z-50 border-2 border-solid border-[#000] rounded-full bg-[#fff] cursor-pointer w-[50px] h-[50px]"
+          className="fixed right-0 bottom-0 m-3 p-2 z-50 border-2 border-solid border-black rounded-full bg-white cursor-pointer w-[50px] h-[50px]"
           onClick={() => toggleTheme(darkMode, setDarkMode)}
         >
           {darkMode ? (
-            <i className="fa-solid fa-moon text-[#000]"></i>
+            <i className="fa-solid fa-moon text-black"></i>
           ) : (
-            <i className="fa-solid fa-sun bg-[#fff] text-[#000]"></i>
+            <i className="fa-solid fa-sun bg-white text-black"></i>
           )}
         </button>
       </div>

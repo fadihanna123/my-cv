@@ -3,7 +3,11 @@
     "baseUrl": ".",
     "target": "ES2017",
     "useDefineForClassFields": true,
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "esnext",
     "skipLibCheck": true,
     /* Bundler mode */
@@ -13,23 +17,41 @@
     "sourceMap": false,
     "alwaysStrict": true,
     "noEmit": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "typeRoots": ["app/types/"],
+    "typeRoots": [
+      "app/types/"
+    ],
     "paths": {
-      "@app/*": ["app/*"],
-      "@assets/*": ["app/assets/*"],
-      "@components/*": ["app/components/*"],
-      "@containers/*": ["app/containers/*"],
-      "@functions/*": ["app/functions/*"],
-      "@utils/*": ["app/utils/*"],
-      "@styles/*": ["app/styles/*"],
-      "@tests/*": ["app/tests/*"]
+      "@app/*": [
+        "app/*"
+      ],
+      "@assets/*": [
+        "app/assets/*"
+      ],
+      "@components/*": [
+        "app/components/*"
+      ],
+      "@containers/*": [
+        "app/containers/*"
+      ],
+      "@functions/*": [
+        "app/functions/*"
+      ],
+      "@utils/*": [
+        "app/utils/*"
+      ],
+      "@styles/*": [
+        "app/styles/*"
+      ],
+      "@tests/*": [
+        "app/tests/*"
+      ]
     },
     "incremental": false,
     "esModuleInterop": true,
@@ -45,7 +67,10 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "build/types/**/*.ts"
+    "build/types/**/*.ts",
+    "build/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

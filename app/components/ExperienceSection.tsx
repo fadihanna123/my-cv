@@ -1,5 +1,6 @@
 "use client";
-import { expeData, experienceSection, years } from "@utils/consts";
+
+import { expeData, experienceSection, years } from "@app/utils";
 import TxtSection from "../ui/TxtSection";
 import CountUp from "react-countup";
 
@@ -13,7 +14,7 @@ const ExperienceSection: React.FC = () => {
         <br />
         <div className="ml-5 flex items-center justify-center sm:ml-auto sm:mr-14">
           <i className="fa-solid fa-clock fa-fw mr-5 sm:mr-1"></i>
-          <span className="mr-[80px] italic sm:ml-2 sm:mr-6">
+          <span className="mr-20 italic sm:ml-2 sm:mr-6">
             <CountUp
               start={0}
               end={2.5}

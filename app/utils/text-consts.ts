@@ -1,0 +1,26 @@
+export const cv = "CV";
+export const contactMe = "Contact Me";
+export const sending = "Sending ....";
+export const thanksForMsg_Text = "Thanks for your message";
+export const weWillReachBack_Text = "We will reach back soon. 😊";
+export const fullName = "Fullname";
+export const email = "Email";
+export const mobile = "Mobile";
+export const message = "Message";
+export const send = "Send";
+export const educationSection = "Education";
+export const experienceSection = "Experience";
+export const projectsSection = "Projects";
+export const skillsSection = "Skills";
+export const aboutMe = "About Me";
+export const contactSection = "Contact";
+export const years = "years";
+export const myFullName = "Fadi Hanna";
+export const frontendDeveloper = "Frontend developer";
+export const noDescription = "No description yet";
+export const manyOther = "And many other in";
+export const githubProfile = "Github profile";
+export const contactErrorMsg = "Something went wrong. Please try again later.";
+export const downloadCV = "Download My CV (304 kb)";
+export const GithubURLBase = "https://github.com/fadihanna123/";
+

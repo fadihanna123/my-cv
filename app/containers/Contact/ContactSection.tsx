@@ -1,6 +1,6 @@
-import React, { FC, useRef, useState } from "react";
-import { contactMe } from "@utils/consts";
+import { FC, useRef, useState } from "react";
 import ContactForm from "./ContactForm";
+import { contactMe } from "@app/utils";
 
 const ContactSection: FC = () => {
   const [viewFormAlert, setViewFormAlert] = useState<boolean>(false);

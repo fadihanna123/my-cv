@@ -1,11 +1,5 @@
-import { NextConfig } from "next";
-
-const config: NextConfig = {
+const config = {
   content: ["./app/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
   darkMode: "class",
 };
 
