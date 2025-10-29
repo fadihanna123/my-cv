@@ -37,10 +37,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "22.20"
+          node-version: "22.21"
       - name: Install dependencies
         run: yarn setup
       - name: Test
         run: yarn test
       - name: Build
+
         run: yarn build
