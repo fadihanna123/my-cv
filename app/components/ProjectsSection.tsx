@@ -42,6 +42,7 @@ const ProjectsSection = () => {
                 <div className="px-6 pt-4 pb-2">
                   {project.GitURL && (
                     <a
+                      rel="noopener noreferrer"
                       href={project.GitURL}
                       target="_blank"
                       className="inline-block bg-black dark:bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-white dark:text-gray-700 mr-2 mb-2"
@@ -51,6 +52,7 @@ const ProjectsSection = () => {
                   )}
                   {project.URL && (
                     <a
+                      rel="noopener noreferrer"
                       href={project.URL}
                       target="_blank"
                       className="inline-block bg-black dark:bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-white dark:text-gray-700 mr-2 mb-2"
@@ -66,6 +68,7 @@ const ProjectsSection = () => {
       <div className="text-center mt-5 text-xl">
         {manyOther} <br />
         <a
+          rel="noopener noreferrer"
           target="_blank"
           className="link sm:auto relative text-blue-500"
           href="https://github.com/fadihanna123?tab=repositories"

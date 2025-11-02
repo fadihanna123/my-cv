@@ -15,6 +15,7 @@ const SkillsSection = () => (
             className="m-4 w-[8%] p-4 sm:m-4 skillsImgContainer border rounded-full"
           >
             <Image
+              unoptimized
               src={skill.assetURL!}
               alt={skill.value}
               width={60}

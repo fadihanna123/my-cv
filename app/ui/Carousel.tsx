@@ -10,12 +10,13 @@ const Carousel: React.FC<{ images: string[] }> = ({
   const [index, setIndex] = useState<number>(0);
 
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       setIndex((index) => {
         if (index === images.length - 1) return 0;
         return index + 1;
       });
     }, 5000);
+    return () => clearInterval(interval);
   }, [images.length]);
 
   return (
@@ -30,12 +31,14 @@ const Carousel: React.FC<{ images: string[] }> = ({
           priority
         />
         <button
+          aria-label="Previous image"
           onClick={() => showPrevImage(setIndex, images)}
           className="transition-[background-color] duration-100 ease-[ease-in-out] hover:bg-[rgb(0,0,0,20%)] hover:transition-all hover:duration-300 absolute inset-y-0 left-0 block cursor-pointer p-4"
         >
           <i className="fa-solid fa-left-long w-8 fill-black stroke-white"></i>
         </button>
         <button
+          aria-label="Next image"
           onClick={() => showNextImage(setIndex, images)}
           className="transition-[background-color] duration-100 ease-[ease-in-out] hover:bg-[rgb(0,0,0,20%)] hover:transition-all hover:duration-300 absolute inset-y-0 right-0 block cursor-pointer p-4"
         >

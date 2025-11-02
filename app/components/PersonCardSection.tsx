@@ -6,7 +6,7 @@ const PersonCardSection: React.FC = () => (
     <Image
       className="animate-[animateFromLeft_1s_alternate] relative h-[300px] max-w-full rounded-full border-solid border-black sm:w-[300px] w-full"
       src="/myProfilePic.JPG"
-      alt="myProfilePic"
+      alt="Profile picture of Fadi Hanna"
       width={300}
       height={300}
       priority
@@ -18,11 +18,19 @@ const PersonCardSection: React.FC = () => (
         {frontendDeveloper}{" "}
       </h4>
       <div className="text-center">
-        <a href="https://github.com/fadihanna123" target="_blank">
+        <a
+          rel="noopener noreferrer"
+          href="https://github.com/fadihanna123"
+          target="_blank"
+        >
           <i className="fa-brands fa-github text-[40px] text-black hover:animate-bounce m-2"></i>
         </a>
 
-        <a href="https://www.linkedin.com/in/fadihanna123" target="_blank">
+        <a
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/fadihanna123"
+          target="_blank"
+        >
           <i className="fa-brands fa-linkedin text-[40px] text-black hover:animate-bounce m-2"></i>
         </a>
       </div>

@@ -3,7 +3,9 @@ import { NextConfig } from "next";
 
 const config: NextConfig = {
   distDir: "build",
-  images: { unoptimized: true },
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "skillicons.dev" }],
+  },
   reactStrictMode: true,
   env: {
     serviceId: process.env.NEXT_PUBLIC_SERVICE_ID as string,
