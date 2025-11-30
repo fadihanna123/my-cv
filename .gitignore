@@ -25,3 +25,5 @@ tsconfig.tsbuildinfo
 .docker.env
 # Sentry Config File
 .env.sentry-build-plugin
+
+certificates

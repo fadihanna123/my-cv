@@ -15,7 +15,7 @@
   },
   "scripts": {
     "setup": "yarn --silent --ignore-scripts --emoji --immutable",
-    "dev": "next dev --turbo",
+    "dev": "next dev --turbo --experimental-https",
     "prebuild": "rimraf dist ./.next ./build",
     "build": "yarn prebuild && tsc && next build --turbopack",
     "preview": "serve ./build",
