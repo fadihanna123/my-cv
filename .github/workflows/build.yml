@@ -38,23 +38,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22.21"
-      - name: Setup Homebrew
-        run: |
-          sudo apt-get update 
-          sudo apt-get install -y build-essential curl file git
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          echo >> /home/runner/.bashrc
-          echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/runner/.bashrc
-          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
       - name: Install dependencies
         run: yarn setup
       - name: Test
         run: yarn test
-      - name: Create SSL certificates
-        run: |
-          brew install mkcert
-          mkcert -install
-          cd client
-          mkdir -p .cert && mkcert -key-file ./.cert/key.pem -cert-file ./.cert/cert.pem 'localhost'
       - name: Build
         run: yarn build
