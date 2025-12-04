@@ -50,7 +50,7 @@ jobs:
         run: yarn setup
       - name: Test
         run: yarn test
-      - name: Create SSL certificate
+      - name: Create SSL certificates
         run: |
           brew install mkcert
           mkcert -install
