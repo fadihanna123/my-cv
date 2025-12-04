@@ -48,5 +48,11 @@ jobs:
         run: yarn setup
       - name: Test
         run: yarn test
+      - name: Setup Homebrew
+        run: |
+          brew install mkcert
+          mkcert -install
+          cd client
+          mkdir -p .cert && mkcert -key-file ./.cert/key.pem -cert-file ./.cert/cert.pem 'localhost'
       - name: Build
         run: yarn build
