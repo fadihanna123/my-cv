@@ -1,6 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
+
+import { FC, useEffect, useState } from "react";
 import "@styles/App.css";
+import { ClipLoader } from "react-spinners";
+
+// Components
 import {
   EducationSection,
   ExperienceSection,
@@ -11,15 +15,14 @@ import {
 import { Footer, Header } from "./inc";
 import { MyGlobalContext } from "./states";
 import { toggleTheme } from "./functions";
-import { ContactSection } from "./containers/Contact";
-import { ClipLoader } from "react-spinners";
+import { ContactSection } from "@containers/Contact";
 
-const Layout: React.FC = () => {
+const Layout: FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000);
+    const timer: NodeJS.Timeout = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+
+// Functions
 import { showNextImage, showPrevImage } from "@app/functions";
 
 const Carousel: React.FC<{ images: string[] }> = ({
@@ -29,6 +31,7 @@ const Carousel: React.FC<{ images: string[] }> = ({
           width={0}
           height={0}
           priority
+          loading="lazy"
         />
         <button
           aria-label="Previous image"

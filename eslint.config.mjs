@@ -13,7 +13,7 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   {
-    ignores: ["build/**", "node_modules", ".next"],
+    ignores: ["build/**", "node_modules"],
   },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
@@ -30,6 +30,7 @@ const eslintConfig = [
     },
 
     rules: {
+      "no-console": "error",
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/triple-slash-reference": "off",
       "react-refresh/only-export-components": [
@@ -38,7 +39,6 @@ const eslintConfig = [
           allowConstantExport: true,
         },
       ],
-      "no-console": "error",
     },
   },
 ];

@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import emailjs from "@emailjs/browser";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -10,11 +10,7 @@ emailjs.init({
   publicKey: emailJSDetails.publicKey,
 });
 
-const rootLayout: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}: {
-  children: React.ReactNode;
-}) => {
+const rootLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en" className="scroll-smooth">
       <head>

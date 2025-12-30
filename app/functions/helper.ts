@@ -1,17 +1,17 @@
 import emailjs from "@emailjs/browser";
-import { emailJSDetails } from "@app/utils/contact-consts";
+
+// Components
+import { emailJSDetails } from "@app/utils";
 
 export const toggleTheme = (
   darkMode: boolean,
   setDarkMode: (darkMode: boolean) => void,
-) => {
-  setDarkMode(!darkMode);
-};
+): void => setDarkMode(!darkMode);
 
 export const showPrevImage = (
   setIndex: (index: any) => void,
   images: string[],
-) => {
+): void => {
   setIndex((index: number) => {
     if (index === 0) return images.length - 1;
     return index - 1;
@@ -21,7 +21,7 @@ export const showPrevImage = (
 export const showNextImage = (
   setIndex: (index: any) => void,
   images: string[],
-) => {
+): void => {
   setIndex((index: number) => {
     if (index === images.length - 1) return 0;
     return index + 1;
@@ -36,7 +36,7 @@ export const onSubmit = (
     setIsError,
     contactFormRef,
   }: onSubmitProps,
-) => {
+): void => {
   const templateParams: Record<keyof ContactForm, string> = {
     contact_fullName: data.contact_fullName,
     contact_email: data.contact_email,

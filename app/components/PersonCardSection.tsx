@@ -1,7 +1,10 @@
-import { myFullName, frontendDeveloper } from "@app/utils";
+import { FC } from "react";
 import Image from "next/image";
 
-const PersonCardSection: React.FC = () => (
+// Components
+import { myFullName, frontendDeveloper } from "@app/utils";
+
+const PersonCardSection: FC = () => (
   <div className="personCardSection bg-[linear-gradient(43deg,#4158d0_50%,#fff_10%)] transition-all duration-300 flex w-full flex-col justify-around rounded-sm border p-2 sm:flex-row">
     <Image
       className="animate-[animateFromLeft_1s_alternate] relative h-[300px] max-w-full rounded-full border-solid border-black sm:w-[300px] w-full"

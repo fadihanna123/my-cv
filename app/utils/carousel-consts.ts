@@ -1,4 +1,4 @@
-export const carouselImageCollection = [
+export const carouselImageCollection: string[] = [
   "/Pixabayfinder.png",
   "/CV_React.png",
   "/CameraWebsite.png",
@@ -10,4 +10,3 @@ export const carouselImageCollection = [
   "/my_cv.png",
   "/E-handelproject.png",
 ];
-

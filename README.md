@@ -7,7 +7,7 @@ A modern, responsive CV/portfolio website built with Next.js, TypeScript, and Ta
 ## 🚀 Features
 
 - Modern and responsive design
-- Built with Next.js 15 and React 19
+- Built with Next.js 16 and React 19
 - TypeScript for type safety
 - Tailwind CSS for styling
 - Email contact form integration
@@ -18,7 +18,7 @@ A modern, responsive CV/portfolio website built with Next.js, TypeScript, and Ta
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15
+- **Framework**: Next.js 16
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Testing**: Vitest, Testing Library
@@ -109,9 +109,6 @@ my-cv/
 ## 📄 License
 
 This project is private and proprietary.
-
-## Screenshot
-![Screenshot](screenshot.png "Screenshot")
 
 ## 🤝 Contributing
 

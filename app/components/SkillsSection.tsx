@@ -1,7 +1,10 @@
-import { skills, skillsSection } from "@app/utils";
+import { FC } from "react";
 import Image from "next/image";
 
-const SkillsSection = () => (
+// Components
+import { skills, skillsSection } from "@app/utils";
+
+const SkillsSection: FC = () => (
   <div className="text-center dark:text-neutral-300">
     <h1 className="my-4 text-3xl">
       <span className="mr-6 text-4xl sm:mr-2">🧑‍💻</span>

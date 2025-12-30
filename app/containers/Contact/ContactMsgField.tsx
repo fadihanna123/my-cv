@@ -1,7 +1,10 @@
-import { message } from "@app/utils";
+import { FC } from "react";
 import { useForm } from "react-hook-form";
 
-const ContactMsgField = () => {
+// Components
+import { message } from "@app/utils";
+
+const ContactMsgField: FC = () => {
   const { register } = useForm<ContactForm>();
 
   return (

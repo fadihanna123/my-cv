@@ -1,7 +1,10 @@
-import { fullName } from "@app/utils";
+import { FC } from "react";
 import { useForm } from "react-hook-form";
 
-const ContactFullNameField = () => {
+// Components
+import { fullName } from "@app/utils";
+
+const ContactFullNameField: FC = () => {
   const { register } = useForm<ContactForm>();
 
   return (

@@ -59,14 +59,6 @@ export const projectData: projectData[] = [
   },
   {
     id: 8,
-    title: "My CV (current)",
-    desc: "🧑‍💼My CV is my portfolio website to show my experiences, projects and education.",
-    URL: undefined,
-    GitURL: `${GithubURLBase}/my-cv`,
-    assetPath: "/my_cv.png",
-  },
-  {
-    id: 9,
     title: "Billigast & Begagnade",
     desc: "A modern e-commerce website project built with HTML, CSS, TypeScript, and JavaScript.",
     URL: undefined,
@@ -74,7 +66,7 @@ export const projectData: projectData[] = [
     assetPath: "/E-handelproject.png",
   },
   {
-    id: 10,
+    id: 9,
     title: "Chat App 2",
     desc: "A modern real-time chat application built with a React frontend and Node.js backend.",
     URL: undefined,
@@ -82,15 +74,15 @@ export const projectData: projectData[] = [
     assetPath: "/Chatapp2.png",
   },
   {
-    id: 11,
+    id: 10,
     title: "Fadi Streams",
     desc: "A simple web-based video meeting app built with Agora RTC SDK and TypeScript.",
     URL: "https://fadistreams.vercel.app",
     GitURL: undefined,
-    assetPath: "/FadiClub.png",
+    assetPath: "/FadiStreams.png",
   },
   {
-    id: 12,
+    id: 11,
     title: "Movies Finder",
     desc: "A movie library app to search movies and learn know about it.",
     URL: "https://movies-finder-wine.vercel.app",

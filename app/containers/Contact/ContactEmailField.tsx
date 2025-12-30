@@ -1,7 +1,10 @@
-import { email } from "@app/utils";
+import { FC } from "react";
 import { useForm } from "react-hook-form";
 
-const ContactEmailField = () => {
+// Components
+import { email } from "@app/utils";
+
+const ContactEmailField: FC = () => {
   const { register } = useForm<ContactForm>();
 
   return (

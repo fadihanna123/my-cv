@@ -1,7 +1,10 @@
-import { mobile } from "@app/utils";
+import { FC } from "react";
 import { useForm } from "react-hook-form";
 
-const ContactMobNrField = () => {
+// Components
+import { mobile } from "@app/utils";
+
+const ContactMobNrField: FC = () => {
   const { register } = useForm<ContactForm>();
 
   return (

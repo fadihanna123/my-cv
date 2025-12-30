@@ -1,6 +1,8 @@
-import { educationSection, eduData } from "@app/utils";
-import TxtSection from "../ui/TxtSection";
 import { FC } from "react";
+
+// Components
+import { educationSection, eduData } from "@app/utils";
+import TxtSection from "@ui/TxtSection";
 
 const EducationSection: FC = () => (
   <div

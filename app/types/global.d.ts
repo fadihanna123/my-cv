@@ -1,4 +1,7 @@
 declare global {
+  interface RootLayoutProps {
+    children: ReactNode;
+  }
   interface TxtSectionProps {
     title: string;
     fromDate: string;
@@ -23,6 +26,12 @@ declare global {
     URL: string | undefined;
     GitURL: string | undefined;
     assetPath: any;
+  }
+
+  interface emailJSDetails {
+    serviceId: string | undefined;
+    templateId: string | undefined;
+    publicKey: string | undefined;
   }
 
   interface skillsData {
@@ -73,6 +82,8 @@ declare global {
     setIsError: (isError: boolean) => void;
     contactFormRef: React.RefObject<HTMLFormElement | null>;
   }
+
+  type GlobalErrorProps = { error: Error & { digest?: string } };
 }
 
 export {};

@@ -5,3 +5,4 @@ export * from "./Header.test";
 export * from "./PersonCardSection.test";
 export * from "./ProjectsSection.test";
 export * from "./SkillsSection.test";
+export * from "./ContactSection.test";
