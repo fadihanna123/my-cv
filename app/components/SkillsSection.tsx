@@ -15,7 +15,7 @@ const SkillsSection: FC = () => (
         return (
           <span
             key={i}
-            className="m-4 w-[8%] p-4 sm:m-4 skillsImgContainer border rounded-full"
+            className="m-4 w-[8%] p-4 sm:m-4 skillsImgContainer border"
           >
             <Image
               unoptimized

@@ -3,11 +3,13 @@ import emailjs from "@emailjs/browser";
 // Components
 import { emailJSDetails } from "@app/utils";
 
+// toggleTheme: toggle the theme between dark and light
 export const toggleTheme = (
   darkMode: boolean,
   setDarkMode: (darkMode: boolean) => void,
 ): void => setDarkMode(!darkMode);
 
+// showPrevImage: show the previous image in carousel
 export const showPrevImage = (
   setIndex: (index: any) => void,
   images: string[],
@@ -18,6 +20,7 @@ export const showPrevImage = (
   });
 };
 
+// showNextImage: show the next image in carousel
 export const showNextImage = (
   setIndex: (index: any) => void,
   images: string[],
@@ -28,6 +31,7 @@ export const showNextImage = (
   });
 };
 
+// onSubmit: handle the contact form submission
 export const onSubmit = (
   data: ContactForm,
   {

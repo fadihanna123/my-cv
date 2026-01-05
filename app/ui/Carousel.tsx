@@ -22,7 +22,7 @@ const Carousel: React.FC<{ images: string[] }> = ({
   }, [images.length]);
 
   return (
-    <div className="aspect-10/6 duration-300 mx-auto my-0 h-[500px] w-full max-w-[1200px] transition-transform m-2 p-2">
+    <div className="aspect-10/6 duration-300 mx-auto my-0 h-125 w-full max-w-300 transition-transform m-2 p-2">
       <div className="relative size-full">
         <Image
           alt="CarouselImage"

@@ -28,7 +28,7 @@ const ProjectsSection: FC = () => (
               key={project.id}
             >
               <Image
-                className="w-full h-[200px]"
+                className="w-full h-50"
                 src={project.assetPath}
                 alt={project.title}
                 width={500}
@@ -37,7 +37,7 @@ const ProjectsSection: FC = () => (
               />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{project.title}</div>
-                <p className="text-gray-700 text-base dark:text-white italic h-[100px]">
+                <p className="text-gray-700 text-base dark:text-white italic h-25">
                   {project.desc || noDescription}
                 </p>
               </div>

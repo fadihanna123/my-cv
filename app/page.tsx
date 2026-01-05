@@ -66,7 +66,7 @@ const Layout: FC = () => {
         </div>
         <Footer />
         <button
-          className="fixed right-0 bottom-0 m-3 p-2 z-50 border-2 border-solid border-black rounded-full bg-white cursor-pointer w-[50px] h-[50px]"
+          className="fixed right-0 bottom-0 m-3 p-2 z-50 border-2 border-solid border-black rounded-full bg-white cursor-pointer w-12.5 h-12.5"
           onClick={() => toggleTheme(darkMode, setDarkMode)}
         >
           {darkMode ? (
