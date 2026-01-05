@@ -26,6 +26,13 @@ const rootLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps) => {
           name="description"
           content="🧑‍💼My CV is my portfolio website to show my experiences, projects and education."
         />
+        <meta name="og:title" content="Fadi Hanna - CV" />
+        <meta
+          name="og:description"
+          content="🧑‍💼My CV is my portfolio website to show my experiences, projects and education."
+        />
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="https://my-cv-sigma-olive.vercel.app" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -37,7 +44,7 @@ const rootLayout: FC<RootLayoutProps> = ({ children }: RootLayoutProps) => {
         <title> Fadi Hanna - CV </title>
       </head>
       <body>{children}</body>
-      <GoogleAnalytics gaId="G-ZP6HC56EFF" />
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_ANALYTICS_ID!} />
     </html>
   );
 };
