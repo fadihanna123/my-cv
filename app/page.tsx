@@ -70,9 +70,9 @@ const Layout: FC = () => {
           onClick={() => toggleTheme(darkMode, setDarkMode)}
         >
           {darkMode ? (
-            <i className="fa-solid fa-moon text-black"></i>
+            <i className="fa-solid fa-moon text-gray-800"></i>
           ) : (
-            <i className="fa-solid fa-sun bg-white text-black"></i>
+            <i className="fa-solid fa-sun bg-white text-yellow-400"></i>
           )}
         </button>
       </div>
